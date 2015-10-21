@@ -1,13 +1,9 @@
 
 
-*{
-    font-size: 18px;
-}
-
 h2 {
     font-size: 24px;
     text-align: center;
-     
+
 }
 
 .boxshadow {
@@ -17,6 +13,7 @@ h2 {
 }
 
 body {
+    font-size: 18px;
     padding: 5px;
     margin: 0;
     background-color: #eee;
@@ -28,16 +25,15 @@ p {
 }
 
 a{
- margin-top: 14px;
  margin-bottom: 21px;
  padding-left: 12px;
+ display: block;
 }
 
 
 .conteyner {
     width: 510px;
-    height: 750px;
-    background-color:#fff; 
+    background-color:#fff;
     padding: 50px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -46,50 +42,22 @@ a{
 .conteyner ul {
     margin-top: 38px;
     margin-bottom: 19px;
-    
+
 }
 .conteyner img {
     margin-left: 138px;
     border-radius:50%;
 }
 .borderTop {
-    padding-top: 28px;    
-    border-top: 1px solid #000;  
+    padding-top: 28px;
+    border-top: 1px solid #000;
 }
 .m1 {
     margin-bottom: 18px;
 }
 .marBot {
-    margin-bottom: 5px;   
+    margin-bottom: 5px;
 }
 .blok2 {
     margin-top: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
