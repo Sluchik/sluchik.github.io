@@ -130,10 +130,6 @@ body {
   float: left;
 }
 
-.footer li:last-child{
-  margin-left: 180px;
-  font: 13px/40px Arial, sans-serif;
-}
 
 .footer a {
   display: block;
@@ -142,4 +138,11 @@ body {
 }
 .footer a:hover{
   text-decoration: underline;
+}
+.copyRite {
+  padding-right: 90px;
+  color: #2c2c2c;
+  font: 13px/40px Arial, sans-serif;
+  float: right;
+  display: block;
 }
