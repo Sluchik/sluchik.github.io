@@ -8,6 +8,7 @@ a {
   text-decoration: none;
 }
 body {
+  font-family: Arial, sans-serif;
   background-color: #f9f9f9;
 }
 
@@ -61,7 +62,8 @@ body {
   display: block;
   padding: 0 40px;
   color: #fff;
-  font: 15px/40px Arial, sans-serif;
+  font-size: 15px;
+  line-height: 40px;
 }
 
 /*content*/
@@ -86,12 +88,13 @@ body {
 .menu li:first-child {
   border-top: 0px solid #c8c8c8;
 }
-.menu a{
+.menu a {
   padding-left: 20px;
   display: block;
   transition: 0.2s all;
   color: #2c2c2c;
-  font: 13px/40px Arial, sans-serif;
+  font-size: 13px;
+  line-height: 40px;
 }
 
 .menu a:hover  {
@@ -107,7 +110,8 @@ body {
 .prodact p {
   color: #2c2c2c;
   padding-left: 24px;
-  font: 13px/20px Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
 }
 .prodactImg {
   text-align: center;
@@ -134,15 +138,17 @@ body {
 .footer a {
   display: block;
   color: #2c2c2c;
-  font: 13px/40px Arial, sans-serif;
+  font-size: 13px;
+  line-height: 40px;
 }
 .footer a:hover{
   text-decoration: underline;
 }
-.copyRite {
+.copyright {
   padding-right: 90px;
   color: #2c2c2c;
-  font: 13px/40px Arial, sans-serif;
+  font-size: 13px;
+  line-height: 40px;
   float: right;
   display: block;
 }
