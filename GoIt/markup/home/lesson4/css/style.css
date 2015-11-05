@@ -4,15 +4,12 @@
 
 }
 a {
+  color: #41a1b9;
   font-size: 12px;
+  text-decoration: none;
 }
 ul li {
   list-style: none;
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 body {
@@ -20,19 +17,31 @@ body {
   background-color: #108eae;
   background-image: url(../img/bg.jpg);
   background-repeat: repeat-x;
-
 }
+
 h3 {
   padding-top: 10px;
 }
+p {
+  font: 12px/20px Tahoma, sans-serif;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.border {
+  border-left: 1px solid #b1b1b1;
+  border-right: 1px solid #b1b1b1;
+}
 
 .wraper {
-width: 1000px;
-margin: 0 auto;
-background-color: #fff;
-box-shadow: 0px 6px 23px 2px rgba(0,0,0,0.53);
-display: block;
-box-sizing:content-box;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 6px 23px 2px rgba(0,0,0,0.53);
+  display: block;
+  box-sizing:content-box;
 }
 /*header*/
 .header{
@@ -43,6 +52,8 @@ box-sizing:content-box;
 
 }
 .logo {
+  color: #41a1b9;
+  font: 12px/20px Tahoma, sans-serif;
   width: 50%;
   height: 163px;
   float: left;
@@ -57,6 +68,11 @@ box-sizing:content-box;
   float: right;
 }
 .contact {
+  color: #41a1b9;
+  text-align: right;
+  font: 12px/20px Tahoma, sans-serif;
+}
+.contact a {
   text-align: right;
 }
 
@@ -64,13 +80,13 @@ box-sizing:content-box;
   margin-top: 22px;
 }
 .rightMenu li {
-width: 58px;
-text-align: center;
+  width: 62px;
+  text-align: center;
   float: left;
   display: block;
 }
 .rightMenu img {
-
+height: 100%;
 }
 .rightMenu a {
 line-height: 20px;
@@ -86,72 +102,88 @@ display: block;
 .hederBottom img {
   height: 100%;
 }
-/*main menu*/
-
-.menu{
-
-  text-align: center;
-  background: rgb(55,55,55);
-  background: -moz-linear-gradient(top, rgb(55,55,55) 0%, rgb(51,51,51) 49%, rgb(55,55,55) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(55,55,55)), color-stop(49%,rgb(51,51,51)), color-stop(100%,rgb(55,55,55)));
-  background: -webkit-linear-gradient(top, rgb(55,55,55) 0%,rgb(51,51,51) 49%,rgb(55,55,55) 100%);
-  background: -o-linear-gradient(top, rgb(55,55,55) 0%,rgb(51,51,51) 49%,rgb(55,55,55) 100%);
-  background: -ms-linear-gradient(top, rgb(55,55,55) 0%,rgb(51,51,51) 49%,rgb(55,55,55) 100%);
-  background: linear-gradient(to bottom, rgb(55,55,55) 0%,rgb(51,51,51) 49%,rgb(55,55,55) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#373737',GradientType=0 );
-}
-.menu:first-child {
- margin-left: 50px;
- }
-.menu li {
+/*main-menu*/
+.menu {
+  width: 100%;
+  color: #fff;
+  padding-left: 60px;
   position: relative;
-  margin: 0 43px;
+  background: rgb(55,55,55);
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.61);
+  box-sizing: border-box;
+}
+.menu li {
   float: left;
+  position: relative;
+  transition: all 0.5s;
 
 }
-.menu ul {
+.menu li a {
+  color: #fff;
+  padding: 0 33px;
+  text-decoration: none;
+  position: relative;
+  font: 14px/28px "Open Sans", sans-serif;
+  display: block;
+}
+.menu li ul {
   display: none;
   position: absolute;
-  top: 100%;
+  background: rgb(55,55,55);
 }
-.menu li:hover ul{
+.menu li:hover ul {
   display: block;
-  background-color: rgb(55,55,55);
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.61);
+}
+
+/*.icon{
+  right: 10px;
+  height: 5px;
+  width: 5px;
   position: absolute;
-}
-.menu a {
-color: #fff;
-font: 14px/28px "Open Sans", sans-serif;
-text-decoration: none;
-}
+  background: url(../img/tr.png) 0 0 no-repeat;
+}*/
+
 /*main_content*/
 .coteyner {
   overflow: hidden;
   padding-bottom: 15px;
+
+}
+.coteyner h3 {
+  font: 18px/20px Tahoma, sans-serif;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 10px;
 }
 .left_block {
   width: 25%;
   float: left;
-  background-color: rgb(190,181,210);
+  background-color: #edeef0;
   padding: 16px 16px 20000px 16px;
   margin-bottom: -20000px;
 }
 .center_block {
-width: 50%;
-float: left;
-background: #e34456;
-padding-bottom: 20000px;
-margin-bottom: -20000px;
+  float: left;
+  width: 50%;
+  background: #fff;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 
 }
 .right_block {
-    width: 25%;
-    float: right;
-    background-color: rgb(190,181,210);
+  width: 25%;
+  float: right;
+  background-color: #edeef0;
   padding: 16px 16px 20000px 16px;
-    margin-bottom: -20000px;
+  margin-bottom: -20000px;
 }
-.footer{
+
+.footer {
+  width:1000px;
+  color: #fff;
+  position:absolute;
   text-align: center;
-backface-visibility: hidden;
+  margin: 10px 10px;
+
 }
