@@ -15,10 +15,7 @@ ul li {
 
 body {
   padding: 36px 0;
-  background-color: #108eae;
-  background-image: url(../img/bg.jpg);
-  background-repeat: repeat-x;
-
+  background: #0e81a6 url(../img/bg.png) repeat-x;
 }
 
 h3 {
@@ -57,10 +54,8 @@ p {
 .hederTop {
   margin: 0 25px;
 }
-
 .logo {
   color: #41a1b9;
-  font: 12px/20px Tahoma, sans-serif;
   width: 50%;
   height: 163px;
   float: left;
@@ -84,10 +79,7 @@ p {
   color: #41a1b9;
   padding-left: 200px;
   text-align: left;
-  font: 12px/20px Tahoma, sans-serif;
 }
-
-
 
 .rightMenu ul {
   margin-top: 22px;
@@ -132,11 +124,8 @@ p {
   background: -ms-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(51,51,51,1) 100%);
   background: linear-gradient(to bottom,  rgba(69,72,77,1) 0%,rgba(51,51,51,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#333333',GradientType=0 );
-
-
   box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.61);
   box-sizing: border-box;
-
 }
 
 .menu li {
@@ -151,6 +140,7 @@ p {
   font: 14px/28px "Open Sans", sans-serif;
   display: block;
 }
+
 .menu li ul {
   top: 28px;
   display: none;
@@ -160,25 +150,24 @@ p {
 .menu li:hover ul {
   display: block;
   box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.61);
-
 }
 
 .icon > a{
   background: url(../img/tr.png) no-repeat right  12px;
 }
-
 /*main_content*/
 .coteyner {
   overflow: hidden;
   padding-bottom: 15px;
-
 }
+
 .coteyner h3 {
   font: 18px/20px Tahoma, sans-serif;
   text-align: center;
   padding: 0;
   margin-bottom: 10px;
 }
+
 .left_block {
   width: 20%;
   float: left;
@@ -192,8 +181,8 @@ p {
   background: #fff;
   padding-bottom: 20000px;
   margin-bottom: -20000px;
-
 }
+
 .right_block {
   width: 20%;
   float: right;
@@ -201,12 +190,10 @@ p {
   padding: 16px 16px 20000px 16px;
   margin-bottom: -20000px;
 }
-
 .footer {
   width:1000px;
   color: #fff;
   position:absolute;
   text-align: center;
   margin: 10px 10px;
-
 }
