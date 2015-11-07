@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale');
+}
+body{
+
+}
+ul li {
+  list-style: none;
+}
+a,
+p {
+  color: #60b5ed;
+  font: 14px/30px Arial, sans-serif;
+  padding: 0 15px;
+  text-decoration: none;
+  display: block;
+}
+p {
+  color: #fff;
+}
+h3 {
+  color: #fff;
+  font: 24px/48px Arial, sans-serif;
+  text-align: center;
+  border-bottom: 2px solid rgba(255,255,255,.51);;
+}
+.bold {
+  font-weight: bold;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu {
+  width: 100%;
+  background-color: #074d8a;
+  float: left;
+}
+.menu li {
+  float: right;
+}
+.menu li:hover {
+  background-color: rgba(#000,.5);
+}
+.menu a:hover {
+  color: #fff;
+}
+
+.loginborder {
+  text-align: center;
+  width: 45%;
+  background-color: rgba(0,0,0,.5);
+  margin: 10% auto;
+  padding-bottom: 40px;
+  display: block;
+  border-radius: 2px;
+}
+.btt {
+  margin: 25px 0 30px 0;
+  display: block;
+}
+.fb {
+color: #fff;
+background: rgb(61,86,150);
+background: -moz-linear-gradient(top,  rgba(61,86,150,1) 0%, rgba(53,77,137,1) 54%, rgba(45,65,118,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(61,86,150,1)), color-stop(54%,rgba(53,77,137,1)), color-stop(100%,rgba(45,65,118,1)));
+background: -webkit-linear-gradient(top,  rgba(61,86,150,1) 0%,rgba(53,77,137,1) 54%,rgba(45,65,118,1) 100%);
+background: -o-linear-gradient(top,  rgba(61,86,150,1) 0%,rgba(53,77,137,1) 54%,rgba(45,65,118,1) 100%);
+background: -ms-linear-gradient(top,  rgba(61,86,150,1) 0%,rgba(53,77,137,1) 54%,rgba(45,65,118,1) 100%);
+background: linear-gradient(to bottom,  rgba(61,86,150,1) 0%,rgba(53,77,137,1) 54%,rgba(45,65,118,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d5696', endColorstr='#2d4176',GradientType=0 );
+
+border-color: #46b8da;
+display: inline-block;
+padding: 6px 48px;
+margin-bottom: 0;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
+
+/*input {
+  height: 35px;
+  width: 275px;
+  color: #fff;
+  margin-top: 20px;
+  background-color: #000;
+  border-bottom: 1px solid #acacac;
+}*/
+
+ input {
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 1px rgb(65,65,65);
+  background-color: #000;
+  transition:  0.3s;
+}
+input:focus,
+input.focus {
+  border-bottom: solid 1px rgb(104,155,204);
+  background-color: rgb(27,82,136);
+  box-shadow: 0 0 5px 1px #3775de;
+}
+
+.acauntbutton {
+  color: #fff;
+  background: rgb(103,198,230);
+  background: -moz-linear-gradient(top,  rgba(103,198,230,1) 1%, rgba(57,139,204,1) 54%, rgba(47,123,197,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(103,198,230,1)), color-stop(54%,rgba(57,139,204,1)), color-stop(100%,rgba(47,123,197,1)));
+  background: -webkit-linear-gradient(top,  rgba(103,198,230,1) 1%,rgba(57,139,204,1) 54%,rgba(47,123,197,1) 100%);
+  background: -o-linear-gradient(top,  rgba(103,198,230,1) 1%,rgba(57,139,204,1) 54%,rgba(47,123,197,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(103,198,230,1) 1%,rgba(57,139,204,1) 54%,rgba(47,123,197,1) 100%);
+  background: linear-gradient(to bottom,  rgba(103,198,230,1) 1%,rgba(57,139,204,1) 54%,rgba(47,123,197,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c6e6', endColorstr='#2f7bc5',GradientType=0 );
+  border-color: #46b8da;
+  display: inline-block;
+  padding: 6px 10px;
+  margin-bottom: 0;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+}
+.footerText {
+  text-align: center;
+  width: 300px;
+  font: 11px/18px Arial, sans-serif;
+  display: inline-block;
+}
