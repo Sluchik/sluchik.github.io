@@ -9,53 +9,73 @@
 
 <body>
   <div class="wraper">
+    <!-- header -->
     <div class="header clearfix">
       <ul class="menu">
-        <li><a href="#">Cadastre-se</a></li>
-        <li><a href="#"><span>Ola!</span>Entrar </a></li>
-        <li><a href="#">Minhas Ofertas</a></li>
         <li><a href="#">Ajuda</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Forum </a></li>
         <li><a href="#">Vender </a></li>
         <li><a href="#">Meu YouBike</a></li>
       </ul>
-
+      <ul class="menu_r">
+        <li>
+          <a href="#"><img src="img/flag86.png" alt="">Cadastre-se</a>
+        </li>
+        <li><a href="#"><span>Ola!</span>Entrar </a></li>
+        <li>
+          <a href="#">Minhas Ofertas</a>
+        </li>
+      </ul>
     </div>
+    <!-- end header -->
+    <!-- login border -->
+
     <div class="loginborder">
       <h3>Cadastre-se</h3>
-      <form class="forme" action="index.html" method="post">
+      <form class="forme" action="/" method="">
         <div class="btt">
-          <button class="fb"><span class="bold">Log in</span> with <span class="bold">FaceBoock</span></button>
+          <button class="fb" type="submit"><img src="img/facebook_img.png" alt="" class="img1"><span class="bold">Log in</span> with <span class="bold">FaceBoock</span><img src="img/web_arrow_right.png" alt="" class="img2"></button>
         </div>
+      </form>
+      <form class="" action="" method="post">
+        <fieldset class="field_set">
+          <legend>ou</legend>
+          <div>
+            <input type="text" maxlength="40" size="31" placeholder="First Name" autocomplete="on" pattern="[A-Za-z]" autofocus>
+          </div>
+          <div>
+            <input type="text" maxlength="40" size="31" placeholder="Last Name" utocomplete="on" pattern="[A-Za-z]">
+          </div>
+          <div>
+            <input type="email" maxlength="40" size="31" placeholder="Email" utocomplete="on" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+          </div>
+          <div>
+            <input type="password" maxlength="40" size="31" placeholder="Choose Password">
+          </div>
+          <div>
+            <input type="password" maxlength="40" size="31" placeholder="Password Confirm">
+          </div>
+      </form>
+      <form class="" action="index.html" method="post">
         <div>
-          <input type="text" maxlength="20" size="30" autofocus>
+          <p>
+            <input type="checkbox" name="check">Send me Youbike updates and tips</p>
         </div>
-        <div>
-          <input type="text" maxlength="20" size="30">
+      </form>
+      </fieldset>
+      <form action="">
+        <div class="btt">
+          <button class="acauntbutton"><span class="bold">Create my Acaunt</span></button>
         </div>
-        <div>
-          <input type="email" maxlength="20" size="30">
-        </div>
-        <div>
-          <input type="password" maxlength="20" size="30">
-        </div>
-        <div>
-          <input type="password" maxlength="20" size="30">
-       </div>
-       <div>
-         <p><input type = "checkbox" name="check">Send me Youbike updates and tips</p>
-  </div>
-  <div class="btt">
-    <button class="acauntbutton"><span class="bold">Create my Acaunt</span></button>
-  </div>
-  <p class="footerText">By clicking the button above, you agree to the Terms of Service
-Xiew our Privacy Policy.</p>
+      </form>
+      <p class="footerText">By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy.</p>
 
-</form>
-</div>
+    </div>
 
-</div>
+  </div>
+  <!-- end of login border -->
 
 </body>
+
 </html>
