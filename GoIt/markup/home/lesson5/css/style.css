@@ -3,13 +3,15 @@
   padding: 0;
 }
 
-html {
-  background: url(../img/bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-overflow: hidden;
+
+
+body {
+        background: url(../img/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
 }
 
 
@@ -20,14 +22,11 @@ ul li {
 a,
 p {
   color: #60b5ed;
-  /*padding: 1px 10px;*/
   font: 14px/30px Arial, sans-serif;
   text-decoration: none;
   display: block;
 }
-p {
-  color: #fff;
-}
+
 .clearfix::after {
   content: "";
   display: block;
@@ -52,7 +51,7 @@ h3 {
   background-repeat:repeat-x repeat-y;
 }
 .menu {
-  width: 60%;
+  width: 50%;
   float: left;
   }
 .menu li{
@@ -86,7 +85,7 @@ position: relative;
   color: #fff;
 }
 .menu_r{
-  width:40%;
+  width:50%;
   float: left;
 }
 .menu_r li{
@@ -195,7 +194,7 @@ legend {
 
  input {
   color: #fff;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px 15px;;
   border: none;
   border-bottom: solid 1px rgb(65,65,65);
@@ -220,8 +219,7 @@ input .focus {
   background: linear-gradient(to bottom,  rgba(103,198,230,1) 1%,rgba(57,139,204,1) 54%,rgba(47,123,197,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c6e6', endColorstr='#2f7bc5',GradientType=0 );
   border-color: #46b8da;
-
-  padding: 6px 10px;
+padding: 6px 10px;
   margin-bottom: 0;
   line-height: 1.42857143;
   text-align: center;
@@ -232,6 +230,7 @@ input .focus {
 
 }
 .footerText {
+  color: #fff;
   text-align: center;
   width: 330px;
   font: 11px/18px Arial, sans-serif;
@@ -239,22 +238,25 @@ input .focus {
 }
 
 ::-webkit-input-placeholder {
-   color: #fff;
+   color: #ccc;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #fff;
+   color: #ccc;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #fff;
+   color: #ccc;
 }
 
 :-ms-input-placeholder {
-   color: #fff;
+   color: #ccc;
 }
 
-[type = checkbox] {
-    margin-left: -32px;
+.chekbox p {
+  color: #fff;
+}
+[type = checkbox]  {
+    margin-left: -25px;
     margin-right: 10px;
 }
