@@ -19,9 +19,9 @@
           <form action="URL">
             <input type="text" name="name" value="" size="12" placeholder="логін">
             <input type="password" name="name" value="" size="12" placeholder="пароль">
-            <input type="button" name="name" value="Вхід">
+            <input type="button" name="enter" value="Вхід" class="line">
             <input type="button" name="name" value="Регістрація">
-            <input type="button" name="name" value="Забув пароль">
+            <input type="button" name="name" value="Забув пароль?" class="under-line">
           </form>
         </div>
 
@@ -37,8 +37,10 @@
           </li>
         </ul>
       </div>
-      <div class="header-img"></div>
-
+      <div class="header-img">
+        <h1><a href="#"><img src="img/link.png" alt="link" /></a></h1>
+      </div>
+      <!-- menu -->
       <nav class="heder-menu clearfix">
         <ul>
           <li><a href="#">Про Компанію</a></li>
@@ -48,19 +50,21 @@
           <li><a href="#">Контакти</a></li>
         </ul>
         <ul class="statistik">
-          <li><i class="basket"></i>Товарів:<span>  0  </span></li>
+          <li><i class="basket"></i>Товарів:<span> 0 </span></li>
           <li>На суму:<span>0:00 грн </span></li>
           <li></li>
         </ul>
       </nav>
     </header>
     <!-- content -->
+
     <!-- filters -->
 
     <div class="filter">
 
-      <div class="filtr-conteyner">
 
+      <div class="filtr-conteyner">
+        <!-- filter left -->
         <div class="filter-1 filter-border">
           <h3>Пошук по автомобілю</h3>
           <div class="filtr-conteyner">
@@ -166,9 +170,12 @@
 
             </div>
           </div>
-          <a class="align-right" href="#">Пошук...</a>
+          <form class="search-button" action="" method="post">
+            <input type="button" name="name" value="Пошук...">
+          </form>
         </div>
 
+        <!-- filter middle -->
         <div class="filter-2 filter-border">
 
           <dl>
@@ -202,7 +209,7 @@
             </dd>
             <dd>
               <form action="">
-                <h4>сезон</h4>
+                <p class="sizen">сезон:</p>
                 <label for="sizen">
                   <input type="checkbox" name="sizen" value="winter">Зима</label>
                 <label for="sizen">
@@ -212,17 +219,87 @@
               </form>
             </dd>
           </dl>
-          <a class="align-right" href="#">Пошук...</a>
+          <form class="search-button " action="" method="post">
+            <input type="button" name="name" value=" Пошук...">
+          </form>
         </div>
+
+        <!-- filtre right -->
         <div class="filter-3 filter-border">
-          <dl>
-            <dt>Пошук дисків</dt>
-            <dd></dd>
-          </dl>
+
+
+          <div class="filtr-conteyner">
+
+            <div class="left-conteyner">
+              <dl>
+                <dt>Пошук диски</dt>
+                <dd>
+                  <p>Діаметер<span> Диска:</span></p>
+                  <select>
+                    <option value=""></option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                  </select>
+                </dd>
+                <dd>
+                  <p>Кількість <span>отворів для кріплення</span></p>
+                  <select>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </dd>
+                <dd>
+                  <p>Діаметер: <span> розположення отворів для кріплення </span></p>
+                  <select>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </dd>
+              </dl>
+            </div>
+            <div class="right-conteyner">
+              <dl>
+                <dd>
+                  <p>ДЦО</br><span class="min">(діаметер центрального отвору):</span></p>
+                  <select>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </dd>
+
+                <dd>
+                  <p>ET</br><span>(виліт диска):</span></p>
+                  <select>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+
+                </dd>
+                <form class="search-button " action="" method="post">
+                  <input type="button" name="name" value=" Пошук...">
+                </form>
+              </dl>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- content -->
+    <!-- left area -->
     <div class="content">
       <div class="conteyner">
         <aside>
@@ -252,6 +329,7 @@
           </ul>
 
         </aside>
+        <!-- middle area -->
         <article>
           <div class="conteyner1">
             <div class="product">
@@ -287,7 +365,7 @@
               <p>90.00 грн</p>
             </div>
             <div class="product">
-              <h3>Goodyear</h3>
+              <h3>Nokian</h3>
               <h4>Ultra Grip Extreme</h4>
               <div class="product-img">
                 <img src="img/tires/5_t.png" alt="Goodier" />
@@ -311,7 +389,7 @@
               <p>90.00 грн</p>
             </div>
             <div class="product">
-              <h3>Goodyear</h3>
+              <h3>Nokian</h3>
               <h4>Ultra Grip Extreme</h4>
               <div class="product-img">
                 <img src="img/tires/8_t.png" alt="Goodier" />
@@ -319,8 +397,8 @@
               <p>90.00 грн</p>
             </div>
             <div class="product">
-              <h3>Goodyear</h3>
-              <h4>Ultra Grip Extreme</h4>
+              <h3>Hankook</h3>
+              <h4>K 708 155/65 R14</h4>
               <div class="product-img">
                 <img src="img/tires/9_t.png" alt="Goodier" />
               </div>
@@ -328,6 +406,8 @@
             </div>
           </div>
         </article>
+
+        <!-- right area -->
         <aside class="left-aside">
           <h3>Каталог продукції:</h3>
 
@@ -346,7 +426,7 @@
               <p>
           </form>
           <h4>Диски</h4>
-          <form class="" action="index.html" method="post">
+          <form class="" action="" method="post">
             <p>
               <input type="checkbox" name="name" value="4" id="checkbox4">
               <label for="checkbox4">Бренд 4</label>
@@ -366,6 +446,33 @@
         </aside>
       </div>
     </div>
+
+    <!-- sponsors -->
+    <div class="sponsors">
+      <ul>
+        <li><img src="img/sponsors/1_toyo.png" alt=""></li>
+        <li><img src="img/sponsors/2_b.png" alt=""></li>
+        <li><img src="img/sponsors/3_c.png" alt=""></li>
+        <li><img src="img/sponsors/4_s.png" alt=""></li>
+        <li><img src="img/sponsors/5_s.png" alt=""></li>
+        <li><img src="img/sponsors/6_s.png" alt=""></li>
+        <li><img src="img/sponsors/7_s.png" alt=""></li>
+        <li><img src="img/sponsors/8_s.png" alt=""></li>
+      </ul>
+    </div>
+    <!-- footer -->
+
+    <footer>
+      <ul>
+        <li><a href="#">Про компанію</a></li>
+        <li><a href="#">Статї</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+      <p>Створи свій сайт на &#169;Global Vision</p>
+    </footer>
+  </div>
+
   </div>
 
 </body>
