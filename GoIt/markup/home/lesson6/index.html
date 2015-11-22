@@ -50,7 +50,7 @@
           <li><a href="#">Контакти</a></li>
         </ul>
         <ul class="statistik">
-          <li><i class="basket"></i>Товарів:<span> 0 </span></li>
+          <li><a href=""><i class="basket"></i></a>Товарів:<span> 0 </span></li>
           <li>На суму:<span>0:00 грн </span></li>
           <li></li>
         </ul>
@@ -61,50 +61,59 @@
     <!-- filters -->
 
     <div class="filter">
+      <div class="flex__filtr__conteyner">
 
 
-      <div class="filtr-conteyner">
-        <!-- filter left -->
-        <div class="filter-1 filter-border">
-          <h3>Пошук по автомобілю</h3>
-          <div class="filtr-conteyner">
+
+
+        <!--  left filter -->
+        <div class="left__filter filter-border ">
+
+
+          <h3 class="filter_title">Пошук по автомобілю</h3>
+          <div class="flex__filtr__conteyner">
+
+
             <div class="search-car-tires">
-              <dl>
-                <dt>Диски</dt>
-                <dd>
-                  <p>Марка<span> авто:</span></p>
-                  <select>
-                    <option value=""></option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+              <form action="" name="serch by auto">
+                <h4>Диски:</h4>
+                <div class="select-row">
+                  <p>Марка <span class="gray_text">авто:</span></p>
+                  <select name="marka_car">
+                    <option value="none"></option>
+                    <option value="car_1">Aвто 1</option>
+                    <option value="car_2">Aвто 2</option>
+                    <option value="car_3">Aвто 3</option>
+                    <option value="car_4">Aвто 4</option>
+                    <option value="car_5">Aвто 5</option>
                   </select>
-                </dd>
+                </div>
 
-                <dd>
-                  <p>Модель <span>автомобіля:</span></p>
-                  <select>
-                    <option value=""></option>
-                    <option value="1">Volvo</option>
-                    <option value="2">Saab</option>
-                    <option value="merced">Mercedes</option>
-                    <option value="audi">Audi</option>
+                <div class="select-row">
+                  <p>Модель <span class="gray_text">авто:</span></p>
+                  <select name="model_car">
+                    <option value="none"></option>
+                    <option value="model_1">Модель 1</option>
+                    <option value="model_2">Модель 2</option>
+                    <option value="model_3">модель 3</option>
+                    <option value="model_4">Модель 4</option>
+                    <option value="model_5">Модель 5</option>
                   </select>
-                </dd>
+                </div>
 
-                <dd>
+                <div class="select-row">
                   <p>Рік виауску: <span> автомобіля </span></p>
-                  <select>
+                  <select name="year_car">
                     <option value=""></option>
                     <option value="1999">2005</option>
                     <option value="2006">2006</option>
                     <option value="2007">2007</option>
                     <option value="2008">2008</option>
                   </select>
-                </dd>
+                </div>
 
-                <dd>
+
+                <div class="select-row">
                   <p>Комплектація</p>
                   <select>
                     <option value=""></option>
@@ -113,50 +122,53 @@
                     <option value="ABCDx1">ABCDx1</option>
                     <option value="ABCDx12">ABCDx12</option>
                   </select>
-                </dd>
-                </dd>
-              </dl>
+                </div>
+              </form>
             </div>
 
+
             <div class="search-car-wheels">
-              <dl>
-                <dt>Шини</dt>
-                <dd>
-                  <p>Марка <span>авто:</span></p>
-                  <select>
-                    <option value=""></option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </dd>
 
-                <dd>
-                  <p>Модель <span>автомобіля:</span></p>
-                  <select>
-                    <option value=""></option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+              <form action="" name="serch by auto">
+                <h4>Шини:</h4>
+                <div class="select-row">
+                  <p>Марка <span class="gray_text">авто:</span></p>
+                  <select name="marka_car">
+                    <option value="none"></option>
+                    <option value="car_1">Aвто 1</option>
+                    <option value="car_2">Aвто 2</option>
+                    <option value="car_3">Aвто 3</option>
+                    <option value="car_4">Aвто 4</option>
+                    <option value="car_5">Aвто 5</option>
                   </select>
-                </dd>
+                </div>
 
-                <dd>
+                <div class="select-row">
+                  <p>Модель <span class="gray_text">авто:</span></p>
+                  <select name="model_car">
+                    <option value="none"></option>
+                    <option value="model_1">Модель 1</option>
+                    <option value="model_2">Модель 2</option>
+                    <option value="model_3">модель 3</option>
+                    <option value="model_4">Модель 4</option>
+                    <option value="model_5">Модель 5</option>
+                  </select>
+                </div>
+
+                <div class="select-row">
                   <p>Рік виауску: <span> автомобіля </span></p>
-                  <select>
+                  <select name="year_car">
                     <option value=""></option>
                     <option value="1999">2005</option>
                     <option value="2006">2006</option>
                     <option value="2007">2007</option>
                     <option value="2008">2008</option>
                   </select>
-                </dd>
+                </div>
 
-                <dd>
-                  <p>Комплектація</span>
-                  </p>
+
+                <div class="select-row">
+                  <p>Комплектація</p>
                   <select>
                     <option value=""></option>
                     <option value="ABCD">ABCD</option>
@@ -164,31 +176,31 @@
                     <option value="ABCDx1">ABCDx1</option>
                     <option value="ABCDx12">ABCDx12</option>
                   </select>
-                </dd>
-                </dd>
-              </dl>
-
+                </div>
+              </form>
             </div>
           </div>
-          <form class="search-button" action="" method="post">
-            <input type="button" name="name" value="Пошук...">
-          </form>
         </div>
 
-        <!-- filter middle -->
-        <div class="filter-2 filter-border">
 
-          <dl>
-            <dt>Пошук шин</dt>
-            <dd>
-              <p>Розмір:</span>
-              </p>
+
+
+
+        <!-- middle filter  -->
+        <div class="middle__filter filter-border ">
+
+
+          <h3>Пошук шин</h3>
+          <form action="" name="serch by tiers">
+            <div class="select-row">
+              <p>Розмір:</p>
               <select>
                 <option value="145">145</option>
                 <option value="145">145</option>
                 <option value="145">145</option>
                 <option value="145">145</option>
-              </select><span> / </span>
+              </select>
+              <span> / </span>
               <select>
                 <option value=""></option>
                 <option value="145">145</option>
@@ -196,8 +208,8 @@
                 <option value="145">145</option>
                 <option value="145">145</option>
               </select>
-            </dd>
-            <dd>
+            </div>
+            <div class="select-row">
               <p>R</p>
               <select>
                 <option value=""></option>
@@ -206,35 +218,42 @@
                 <option value="145">145</option>
                 <option value="145">145</option>
               </select>
-            </dd>
-            <dd>
-              <form action="">
-                <p class="sizen">сезон:</p>
-                <label for="sizen">
-                  <input type="checkbox" name="sizen" value="winter">Зима</label>
-                <label for="sizen">
-                  <input type="checkbox" name="sizen" value="sprin">Веснв</label>
-                <label for="sizen">
-                  <input type="checkbox" name="sizen" value="sumer">Літо</label>
-              </form>
-            </dd>
-          </dl>
-          <form class="search-button " action="" method="post">
+            </div>
+            <div class="select-row season">
+              <div>
+
+                <input type="checkbox" name="sizen" value="winter">
+                <label for="sizen">Зима</label>
+              </div>
+              <div>
+                <input type="checkbox" name="sizen" value="sprin">
+                <label for="sizen">Веснв</label>
+              </div>
+              <div>
+                <input type="checkbox" name="sizen" value="sumer">
+                <label for="sizen">Літо</label>
+              </div>
+
+
+          <!--
             <input type="button" name="name" value=" Пошук...">
-          </form>
+         -->
+           </form>
+          </div>
+
         </div>
 
-        <!-- filtre right -->
-        <div class="filter-3 filter-border">
 
+        <!--  right filtre -->
+        <div class="right__filtre filter-border ">
+          <div class="flex__filtr__conteyner">
+            <!-- right__filtre left-conteyne -->
+            <div class="right__filtre--left-conteyner">
+              <form action="" name="serch by disc">
 
-          <div class="filtr-conteyner">
-
-            <div class="left-conteyner">
-              <dl>
-                <dt>Пошук диски</dt>
-                <dd>
-                  <p>Діаметер<span> Диска:</span></p>
+                <h3>Пошук дисків</h3>
+                <div class="select-row">
+                  <p>Діаметер<span class="gray_text">диска:</span></p>
                   <select>
                     <option value=""></option>
                     <option value="10">10</option>
@@ -242,9 +261,9 @@
                     <option value="13">13</option>
                     <option value="14">14</option>
                   </select>
-                </dd>
-                <dd>
-                  <p>Кількість <span>отворів для кріплення</span></p>
+                </div>
+                <div class="select-row">
+                  <p>Кількість <span class="gray_text">отворів для кріплення</span></p>
                   <select>
                     <option value=""></option>
                     <option value="1">1</option>
@@ -252,9 +271,9 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                   </select>
-                </dd>
-                <dd>
-                  <p>Діаметер: <span> розположення отворів для кріплення </span></p>
+                </div>
+                <div class="select-row">
+                  <p>Діаметер: <span class="gray_text"> розположення отворів для кріплення </span></p>
                   <select>
                     <option value=""></option>
                     <option value="1">1</option>
@@ -262,218 +281,247 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                   </select>
-                </dd>
-              </dl>
+                </div>
             </div>
-            <div class="right-conteyner">
-              <dl>
-                <dd>
-                  <p>ДЦО</br><span class="min">(діаметер центрального отвору):</span></p>
-                  <select>
-                    <option value=""></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-                </dd>
 
-                <dd>
-                  <p>ET</br><span>(виліт диска):</span></p>
-                  <select>
-                    <option value=""></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
 
-                </dd>
-                <form class="search-button " action="" method="post">
-                  <input type="button" name="name" value=" Пошук...">
+            <!--  end right__filtre left-conteyne -->
+
+            <!-- right__filtre right-conteyner -->
+
+            <div class="right__filtre--right-conteyner">
+              <div class="select-row">
+                <p>ДЦО<span class="min">(діаметер центрального отвору):</span></p>
+                <select>
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="select-row">
+                <p>ET</br><span>(виліт диска):</span></p>
+                <select>
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+
+
+                <!-- <input type="button" name="name" value=" Пошук..."> -->
+
+
                 </form>
-              </dl>
+
+              </div>
+
+
             </div>
+
+
           </div>
         </div>
       </div>
-    </div>
-    <!-- content -->
-    <!-- left area -->
-    <div class="content">
-      <div class="conteyner">
-        <aside>
-          <h3>Каталог продукції:</h3>
+      <!-- content -->
+      <!-- left area -->
+      <div class="content">
+        <div class="conteyner">
+          <aside>
+            <h3>Каталог продукції:</h3>
 
-          <h4>Шини</h4>
-          <ul>
-            <li><a href="">назва1</a></li>
-            <li><a href="">назва2</a></li>
-            <li><a href="">назва3</a></li>
-            <li><a href="">назва4</a></li>
-          </ul>
+            <h4>Шини</h4>
+            <ul>
+              <li><a href="">назва1</a></li>
+              <li><a href="">назва2</a></li>
+              <li><a href="">назва3</a></li>
+              <li><a href="">назва4</a></li>
+            </ul>
 
-          <h4>Диски</h4>
-          <ul>
-            <li><a href="">назва1</a></li>
-            <li><a href="">назва2</a></li>
-            <li><a href="">назва3</a></li>
-            <li><a href="">назва4</a></li>
-          </ul>
-          <h4>Болти</h4>
-          <ul>
-            <li><a href="">назва1</a></li>
-            <li><a href="">назва2</a></li>
-            <li><a href="">назва3</a></li>
-            <li><a href="">назва4</a></li>
-          </ul>
+            <h4>Диски</h4>
+            <ul>
+              <li><a href="">назва1</a></li>
+              <li><a href="">назва2</a></li>
+              <li><a href="">назва3</a></li>
+              <li><a href="">назва4</a></li>
+            </ul>
+            <h4>Болти</h4>
+            <ul>
+              <li><a href="">назва1</a></li>
+              <li><a href="">назва2</a></li>
+              <li><a href="">назва3</a></li>
+              <li><a href="">назва4</a></li>
+            </ul>
 
-        </aside>
-        <!-- middle area -->
-        <article>
-          <div class="conteyner1">
-            <div class="product">
-              <h3>Goodyear</h3>
-              <h4>Ultra Grip Extreme</h4>
-              <div class="product-img">
-                <img src="img/tires/1_Goodier.png" alt="Goodier" />
+          </aside>
+          <!-- middle area -->
+          <article>
+            <div class="conteyner1">
+              <div class="product">
+                <a href="#">
+                  <h3>Goodyear</h3>
+                  <h4>Ultra Grip Extreme</h4>
+                  <div class="product-img">
+                    <img src="img/tires/1_Goodier.png" alt="Goodier" />
+                  </div>
+                  <p>90.00 грн</p>
+                </a>
               </div>
-              <p>90.00 грн</p>
-            </div>
-            <div class="product">
-              <h3>Nokian</h3>
-              <h4>Hakkapeliitta R</h4>
-              <div class="product-img">
-                <img src="img/tires/2_N.png" alt="Goodier" />
+              <div class="product">
+                <a href="#">
+                  <h3>Nokian</h3>
+                  <h4>Hakkapeliitta R</h4>
+                  <div class="product-img">
+                    <img src="img/tires/2_N.png" alt="Goodier" />
+                  </div>
+                  <p>115 грн</p>
+                </a>
               </div>
-              <p>115 грн</p>
-            </div>
-            <div class="product">
-              <h3>Hankook</h3>
-              <h4>K 708 155/65 R14 </h4>
-              <div class="product-img">
-                <img src="img/tires/3_t.png" alt="Goodier" />
+              <div class="product">
+                <a href="#">
+                  <h3>Hankook</h3>
+                  <h4>K 708 155/65 R14 </h4>
+                  <div class="product-img">
+                    <img src="img/tires/3_t.png" alt="Goodier" />
+                  </div>
+                  <p>393 грн</p>
+                </a>
               </div>
-              <p>393 грн</p>
-            </div>
-            <div class="product">
-              <h3>Goodyear</h3>
-              <h4>Ultra Grip Extreme</h4>
-              <div class="product-img">
-                <img src="img/tires/4_t.png" alt="Goodier" />
+              <div class="product">
+                <a href="#">
+                  <h3>Goodyear</h3>
+                  <h4>Ultra Grip Extreme</h4>
+                  <div class="product-img">
+                    <img src="img/tires/4_t.png" alt="Goodier" />
+                  </div>
+                  <p>90.00 грн</p>
+                </a>
               </div>
-              <p>90.00 грн</p>
-            </div>
-            <div class="product">
-              <h3>Nokian</h3>
-              <h4>Ultra Grip Extreme</h4>
-              <div class="product-img">
-                <img src="img/tires/5_t.png" alt="Goodier" />
+              <div class="product">
+                <a href="#">
+                  <h3>Nokian</h3>
+                  <h4>Ultra Grip Extreme</h4>
+                  <div class="product-img">
+                    <img src="img/tires/5_t.png" alt="Goodier" />
+                  </div>
+                  <p>115 грн</p>
+                </a>
               </div>
-              <p>115 грн</p>
-            </div>
-            <div class="product">
-              <h3>Hankook</h3>
-              <h4>Ultra Grip Extreme</h4>
-              <div class="product-img">
-                <img src="img/tires/6_t.png" alt="Goodier" />
+              <div class="product">
+                <a href="#">
+                  <h3>Hankook</h3>
+                  <h4>Ultra Grip Extreme</h4>
+                  <div class="product-img">
+                    <img src="img/tires/6_t.png" alt="Goodier" />
+                  </div>
+                  <p>393 грн</p>
+                </a>
               </div>
-              <p>393 грн</p>
-            </div>
-            <div class="product">
-              <h3>Goodyear</h3>
-              <h4>Ultra Grip Extreme</h4>
-              <div class="product-img">
-                <img src="img/tires/7_t.png" alt="Goodier" />
+              <div class="product">
+                <a href="#">
+                  <h3>Goodyear</h3>
+                  <h4>Ultra Grip Extreme</h4>
+                  <div class="product-img">
+                    <img src="img/tires/7_t.png" alt="Goodier" />
+                  </div>
+                  <p>90.00 грн</p>
+                </a>
               </div>
-              <p>90.00 грн</p>
-            </div>
-            <div class="product">
-              <h3>Nokian</h3>
-              <h4>Ultra Grip Extreme</h4>
-              <div class="product-img">
-                <img src="img/tires/8_t.png" alt="Goodier" />
+              <div class="product">
+                <a href="#">
+                  <h3>Nokian</h3>
+                  <h4>Ultra Grip Extreme</h4>
+                  <div class="product-img">
+                    <img src="img/tires/8_t.png" alt="Goodier" />
+                  </div>
+                  <p>90.00 грн</p>
+                </a>
               </div>
-              <p>90.00 грн</p>
-            </div>
-            <div class="product">
-              <h3>Hankook</h3>
-              <h4>K 708 155/65 R14</h4>
-              <div class="product-img">
-                <img src="img/tires/9_t.png" alt="Goodier" />
+              <div class="product">
+                <a href="#">
+                  <h3>Hankook</h3>
+                  <h4>K 708 155/65 R14</h4>
+                  <div class="product-img">
+                    <img src="img/tires/9_t.png" alt="Goodier" />
+                  </div>
+                  <p>90.00 грн</p>
+                </a>
               </div>
-              <p>90.00 грн</p>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- right area -->
-        <aside class="left-aside">
-          <h3>Каталог продукції:</h3>
+          <!-- right area -->
+          <aside class="left-aside">
+            <h3>Каталог продукції:</h3>
 
-          <h4>Шини</h4>
-          <form class="" action="index.html" method="post">
-            <p>
-              <input type="checkbox" name="name" value="1" id="checkbox1">
-              <label for="checkbox1">Бренд 1</label>
-              <br>
-              <input type="checkbox" name="name" value="2" id="checkbox2">
-              <label for="checkbox2">Бренд 2</label>
-              <br>
-              <input type="checkbox" name="name" value="3" id="checkbox3">
-              <label for="checkbox3">Бренд 3</label>
-              <br>
+            <h4>Шини</h4>
+            <form class="" action="index.html" method="post">
               <p>
-          </form>
-          <h4>Диски</h4>
-          <form class="" action="" method="post">
-            <p>
-              <input type="checkbox" name="name" value="4" id="checkbox4">
-              <label for="checkbox4">Бренд 4</label>
-              <br>
-              <input type="checkbox" name="name" value="5" id="checkbox5">
-              <label for="checkbox5">Бренд 5</label>
-              <br>
-              <input type="checkbox" name="name" value="6" id="checkbox6">
-              <label for="checkbox6">Бренд 6</label>
-              <br>
-              <p>
+                <input type="checkbox" name="name" value="1" id="checkbox1">
+                <label for="checkbox1">Бренд 1</label>
+                <br>
+                <input type="checkbox" name="name" value="2" id="checkbox2">
+                <label for="checkbox2">Бренд 2</label>
+                <br>
+                <input type="checkbox" name="name" value="3" id="checkbox3">
+                <label for="checkbox3">Бренд 3</label>
+                <br>
                 <p>
-                  <input type="submit" value="Вибрати">
-                </p>
-          </form>
+            </form>
+            <h4>Диски</h4>
+            <form class="" action="" method="post">
+              <p>
+                <input type="checkbox" name="name" value="4" id="checkbox4">
+                <label for="checkbox4">Бренд 4</label>
+                <br>
+                <input type="checkbox" name="name" value="5" id="checkbox5">
+                <label for="checkbox5">Бренд 5</label>
+                <br>
+                <input type="checkbox" name="name" value="6" id="checkbox6">
+                <label for="checkbox6">Бренд 6</label>
+                <br>
+                <p>
+                  <p>
+                    <input type="submit" value="Вибрати">
+                  </p>
+            </form>
 
-        </aside>
+          </aside>
+        </div>
       </div>
+
+      <!-- sponsors -->
+      <div class="sponsors">
+        <ul>
+          <li><img src="img/sponsors/1_toyo.png" alt=""></li>
+          <li><img src="img/sponsors/2_b.png" alt=""></li>
+          <li><img src="img/sponsors/3_c.png" alt=""></li>
+          <li><img src="img/sponsors/4_s.png" alt=""></li>
+          <li><img src="img/sponsors/5_s.png" alt=""></li>
+          <li><img src="img/sponsors/6_s.png" alt=""></li>
+          <li><img src="img/sponsors/7_s.png" alt=""></li>
+          <li><img src="img/sponsors/8_s.png" alt=""></li>
+        </ul>
+      </div>
+      <!-- footer -->
+
+      <footer>
+        <ul>
+          <li><a href="#">Про компанію</a></li>
+          <li><a href="#">Статї</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+        <p>Створи свій сайт на &#169;Global Vision</p>
+      </footer>
     </div>
 
-    <!-- sponsors -->
-    <div class="sponsors">
-      <ul>
-        <li><img src="img/sponsors/1_toyo.png" alt=""></li>
-        <li><img src="img/sponsors/2_b.png" alt=""></li>
-        <li><img src="img/sponsors/3_c.png" alt=""></li>
-        <li><img src="img/sponsors/4_s.png" alt=""></li>
-        <li><img src="img/sponsors/5_s.png" alt=""></li>
-        <li><img src="img/sponsors/6_s.png" alt=""></li>
-        <li><img src="img/sponsors/7_s.png" alt=""></li>
-        <li><img src="img/sponsors/8_s.png" alt=""></li>
-      </ul>
-    </div>
-    <!-- footer -->
-
-    <footer>
-      <ul>
-        <li><a href="#">Про компанію</a></li>
-        <li><a href="#">Статї</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакти</a></li>
-      </ul>
-      <p>Створи свій сайт на &#169;Global Vision</p>
-    </footer>
   </div>
-
-  </div>
+  <!-- <form class="search-button" action="" method="post">
+    <input type="button" name="name" value="Пошук...">
+  </form> -->
 
 </body>
 
