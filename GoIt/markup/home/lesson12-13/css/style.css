@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px 50px;
+  border: 1px solid #fadb0e;
+  border-radius: 4px;
+  color: #868686;
+  /*background-color: #dff0d8;*/
+}
+.checkbox {
+  margin-left: 35px;
+}
+h3 {
+  text-align: center;
+}
