@@ -79,16 +79,16 @@ var button = document.createElement('button');
 var i = 1;
 
 var creareQuestionsList = {
+
   createWraper: function(){
     wrapper.classList.add('wrapper');
     document.body.appendChild(wrapper);
-},
+  },
   createTitle: function(text){
     title.innerHTML = text;
     wrapper.appendChild(title);
-},
-createboxOfquestions: function(){
-
+  },
+  createboxOfquestions: function(NuberOfblok, numberOfanswers){
     boxQuestions.classList.add('boxOfquestions');
     wrapper.appendChild(boxQuestions);
 
@@ -104,41 +104,31 @@ createboxOfquestions: function(){
     label.innerHTML = 'Варіант відповіді №'+i;
     answer_1.appendChild(label);
 
-    for ( i = 1; i < 3; i++){
+    for ( i = 2; i <= numberOfanswers; i++){
       var answer_n = answer_1.cloneNode(true);
-      boxQuestions.appendChild(answer_n);
+      label.innerHTML ='Варіант відповіді №'+i;
+      // boxQuestions.appendChild(answer_n);
+      boxQuestions.insertBefore(answer_n, answer_1);
     };
-    for(var j = 1; j < 4; j++){
+
+    for(var j = 2; j <= NuberOfblok; j++){
       var boxQuestions_n =  boxQuestions.cloneNode(true);
-      wrapper.appendChild(boxQuestions_n);
-    };
-},
+      questions.innerHTML =  j +'. Питання №'+j;
+      // wrapper.appendChild(boxQuestions_n);
+      wrapper.insertBefore(boxQuestions_n, boxQuestions);
+      };
+    },
     createButton: function(){
       buttonBox.classList.add('button');
       wrapper.appendChild(buttonBox);
       buttonBox.appendChild(form);
       button.setAttribute( 'type', 'button' );
-      button.classList.add('btn', 'btn-default', 'btn-lg', 'btn-block');
+      button.classList.add('btn', 'btn-default');
       button.innerHTML = 'Перевірити мої результати';
       form.appendChild(button);
     }
 };
 creareQuestionsList.createWraper();
-creareQuestionsList.createTitle('Тест по прогпамуванню');
-creareQuestionsList.createboxOfquestions();
+creareQuestionsList.createTitle('Тест по порограмуванню');
+creareQuestionsList.createboxOfquestions(3,4);
 creareQuestionsList.createButton();
-
-
-
-
-
-
-
-
-
-// var questions = document.createElement('dt');
-// questions.innerHTML = '1. Питання №1';
-// boxQuestions.appendChild(questions);
-//
-// var answer = document.createElement('dd');
-// questions.appendChild(answer);
