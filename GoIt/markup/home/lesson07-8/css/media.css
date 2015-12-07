@@ -1,25 +1,50 @@
 
 
-@media screen and (max-width: 960px) {
-body {
-  background-color: red;
-}
-}
 
-@media screen and (max-width: 768px) {
+
+@media screen  and (max-width: 768px) {
   body {
     background-color: blue;
   }
+.container {
+  padding: 0 25px;
+}
+#home {
+  padding-top: 220px;
 }
 
-@media screen and (max-width: 480px) {
-  body {
-    background-color: green;
+  .logo {
+    width: 100%;
+    float: none;
+    align-self: center;
+  }
+  .slidre_nav_1,
+  .slidre_nav_2 {
+    width: 5%;
+  }
+  .nav {
+    width:100%;
+    float: none;
+  }
+  .nav li {
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  .slider__article__title {
+    font-size: 48px;
+  }
+  .slider__article__subtitle {
+    font-size: 24px;
+  }
+  .slider__article__text {
+    font-size: 16px;
   }
 }
-
-@media screen and (max-width: 350px) {
+@media screen  and (max-width: 480px) {
   body {
-    background-color: black;
+    background-color: red;
   }
+
+
 }
