@@ -1,13 +1,14 @@
-var number = parseInt(prompt('Enter your number'));
-var n = parseInt(prompt('Enter your power '));
+
+var number = +prompt('Enter your number');
+var n = +prompt('Enter your power ');
+
 function pow(number, n) {
   var  result;
   var result = 1;
       for (var i = 0 ; i < n; i++) {
-      result = result * number;
+      result = +result * number;
    };
-console.log('Your result: ' + result);
-alert('Your result: ' + [result]);
+   return result;
 };
 
-pow(number, n);
+console.log('Your result: ' + pow(number, n));
