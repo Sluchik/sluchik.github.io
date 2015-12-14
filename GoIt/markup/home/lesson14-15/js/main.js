@@ -28,7 +28,7 @@ var app = {
       minCounter = 0;
       hourCounter++
 }
-     if(hourCounter === 24){
+     if(hourCounter >= 24){
      hourCounter = 0;
 }
 //milisec.innerHTML = '<p>'+('0'+ miliSecCounter).slice(-2) +'</p>';
