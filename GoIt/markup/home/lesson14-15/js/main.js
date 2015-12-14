@@ -15,11 +15,12 @@ var n;
 var app = {
 
   timer: function(){
-  /*miliSecCounter++;
-    if(miliSecCounter >= 1000){
+  miliSecCounter++;
+    if(miliSecCounter >= 100){
       miliSecCounter = 0;
-    }*/
-    secCounter++
+      secCounter++
+    }
+
     if(secCounter >= 60){
        secCounter = 0;
        minCounter++
@@ -31,14 +32,26 @@ var app = {
      if(hourCounter >= 24){
      hourCounter = 0;
 }
-//milisec.innerHTML = '<p>'+('0'+ miliSecCounter).slice(-2) +'</p>';
+milisec.innerHTML = '<p>'+('0'+ miliSecCounter+'0').slice(-3) +'</p>';
 sec.innerHTML = '<p>'+('0'+ secCounter).slice(-2) +'</p>';
 min.innerHTML = '<p>'+('0'+ minCounter).slice(-2) +'</p>';
 hour.innerHTML = '<p>'+('0'+ hourCounter).slice(-2) +'</p>';
 },
-  startTimer: function(){
-    startT =  setInterval(app.timer, 1000);
-  }
+startTimer: function(){
+    startT =  setInterval(app.timer, 10);
+    start.disabled = true;
+    stop.disabled = false;
+},
+clearTimer: function(){
+  miliSecCounter = '00';
+  secCounter = 0;
+  minCounter = 0;
+  hourCounter = 0;
+  milisec.innerHTML = '<p>'+('0'+ miliSecCounter).slice(-2) +'</p>';
+  sec.innerHTML = '<p>'+('0'+ secCounter).slice(-2) +'</p>';
+  min.innerHTML = '<p>'+('0'+ minCounter).slice(-2) +'</p>';
+  hour.innerHTML = '<p>'+('0'+ hourCounter).slice(-2) +'</p>';
+}
 };
 
 // start button
@@ -46,15 +59,8 @@ start.onclick = app.startTimer;
 //stop button
 stop.onclick = function() {
     clearTimeout(startT);
+    start.disabled = false;
+    stop.disabled = true;
 }
-//clear button
-clear.onclick = function() {
-secCounter = 0;
-minCounter = 0;
-hourCounter = 0;
-//milisec.innerHTML = '<p>'+('0'+ secCounter).slice(-2) +'</p>';
-sec.innerHTML = '<p>'+('0'+ secCounter).slice(-2) +'</p>';
-min.innerHTML = '<p>'+('0'+ minCounter).slice(-2) +'</p>';
-hour.innerHTML = '<p>'+('0'+ hourCounter).slice(-2) +'</p>';
 
-}
+clear.onclick = app.clearTimer;

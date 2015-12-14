@@ -5,6 +5,10 @@
   margin: 200px auto;
 }
 
+.hidden {
+  display: none;
+}
+
 .flex__conteyner {
   display: flex;
   justify-content: center;

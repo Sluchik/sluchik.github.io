@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Timer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -28,11 +29,13 @@
 <div class="time sec">
     <p>00</p>
 </div>
-<!--
-<div class="time milisec">
-    <p>00</p>
+<div class="time">
+  <p>:</p>
 </div>
--->
+<div class="time milisec">
+    <p>000</p>
+</div>
+
 </div>
 </div>
 <div class="button__conteyner">
@@ -43,7 +46,7 @@
   <button class="start mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id = "start" type="button" name="button">Start</button>
   </div>
   <div class="box box__stop">
-  <button class="start mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="stop"  type="button" name="button">Stop</button>
+  <button class="stop mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="stop"  type="button" name="button">Stop</button>
   </div>
   <div class="box box__clear">
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent " type="button" id="clear" name="button">Clear</button>
