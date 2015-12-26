@@ -196,7 +196,7 @@ header a {
 }
 
 .slide__article {
-  width: 45%;
+  width: 50%;
   /*max-width: 425px;*/
   min-width: 200px;
   padding: 69px 3px 0 40px;
@@ -217,16 +217,19 @@ header a {
 }
 
 .slider__article__text {
-  height: auto;
+  height: 175px;
   width: 100%;
+  padding: 5px;
   min-width: 200px;
   font-family: "Open Sans Light", sans-serif;
   font-size: 18px;
   overflow: hidden;
 }
-
+.slider__article__text p{
+  overflow: hidden;
+}
 .sliderimg__box {
-  width: 45%;
+  width: 40%;
   /*min-width: 300px;*/
   float: right;
   position: relative;
