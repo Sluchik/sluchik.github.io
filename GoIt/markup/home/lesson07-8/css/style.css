@@ -1,3 +1,5 @@
+/*=====GLOBALS STYLE=======*/
+
 * {
   margin: 0;
   padding: 0;
@@ -89,6 +91,7 @@ h1 {
   margin: 0;
 }
 
+/*==========HEADER=======*/
 header {
   top: 60px;
   left: 1px;
@@ -123,22 +126,25 @@ header a {
 
 .nav li {
   display: inline-block;
-  float: left;
-  margin-left: 8%;
+  text-align: right;
+  /*float: left;*/
+  /*margin-left: 8%;*/
+    width: 14.6%;
 }
 
 .nav li  a {
-  display: block;
-  width: 16.6%;
-  min-width: 40px;
+  /*display: block;*/
+  /*min-width: 40px;*/
   height: 50px;
+  padding: 2px;
   font-size: 24px;
   line-height: 50px;
   text-align: right;
+  transition: all .2s;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #edbfff;
 }
 
 #home {
@@ -190,11 +196,12 @@ header a {
 }
 
 .slide__article {
-  width: 52%;
-  max-width: 425px;
-  min-width: 300px;
+  width: 45%;
+  /*max-width: 425px;*/
+  min-width: 200px;
   padding: 69px 3px 0 40px;
   float: left;
+  overflow: hidden;
 }
 
 .slider__article__title {
@@ -212,15 +219,15 @@ header a {
 .slider__article__text {
   height: auto;
   width: 100%;
-  min-width: 400px;
+  min-width: 200px;
   font-family: "Open Sans Light", sans-serif;
   font-size: 18px;
   overflow: hidden;
 }
 
 .sliderimg__box {
-  width: 35%;
-  min-width: 300px;
+  width: 45%;
+  /*min-width: 300px;*/
   float: right;
   position: relative;
 }
@@ -257,6 +264,8 @@ header a {
   background-position: -20px 0px;
 }
 
+
+/*==========ARTICLE========*/
 article {
   height: 340px;
   background: rgb(116,80,130);
@@ -350,13 +359,17 @@ article {
   background-position: -65px 0px;
 }
 
-/*main*/
 
-
+/*=======MAIN==========*/
 
 
 main {
   background-color: #f9f9f9;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.info {
+  border-bottom: 1px solid #e6e6e6;
 }
 /*SECTION*/
 section {
@@ -488,9 +501,9 @@ section {
 
 
 
-/*sponsors*/
+/*==========SPONSORS==========*/
 .sponsors {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #fff;
 }
 
 .sponsors_container {
@@ -550,6 +563,8 @@ section {
   font-style: italic;
 }
 
+
+/*=============FOOTER==============*/
 footer {
   width: 100%;
   color: #fff;
@@ -567,13 +582,12 @@ footer {
 
 .footer__nav li {
   display: inline-block;
-  float: left;
-  margin-right: 5%;
+  width: 16%;
+
 }
 
 .footer__nav li  a {
   display: block;
-  width: 16.6666%;
   height: 50px;
   font-size: 20px;
   line-height: 115px;
