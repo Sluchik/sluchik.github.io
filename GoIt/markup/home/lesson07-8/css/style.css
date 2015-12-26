@@ -129,7 +129,7 @@ header a {
   text-align: right;
   /*float: left;*/
   /*margin-left: 8%;*/
-    width: 14.6%;
+  width: 14.6%;
 }
 
 .nav li  a {
@@ -300,12 +300,14 @@ article {
   position: relative;
 }
 
+
+/*
 .flex-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   resize: vertical;
-}
+}*/
 
 .article__section .article__section__title {
   font-family: "league_gothicregular", sans-serif;
@@ -506,6 +508,14 @@ section {
   border-top: 1px solid #fff;
 }
 
+.sponsors li {
+  text-align: center;
+  display: inline-block;
+  width: 15%;
+  padding: 25px 0;
+}
+
+/*
 .sponsors_container {
   height: 123px;
   display: flex;
@@ -515,11 +525,11 @@ section {
 }
 
 .sponsors__img {
-  width: 100px;
+width: 10%;
   height: 70px;
   display: block;
   text-align: center;
-}
+}*/
 
 /*pre_footer*/
 
@@ -576,14 +586,12 @@ footer {
 .footer__nav {
   height: 115px;
   width: 60%;
-  max-width: 500px;
   float: left;
 }
 
 .footer__nav li {
   display: inline-block;
   width: 16%;
-
 }
 
 .footer__nav li  a {
