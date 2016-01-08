@@ -76,7 +76,10 @@
 
 
 .jcarousel p {
+  margin-top: 10px;
   text-align: center;
+  font: 12px Arial, sans-serif;
+  color: rgb(75,75,75);
 }
 
 

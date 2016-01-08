@@ -13,16 +13,61 @@
   <!-- user css -->
   <link rel="stylesheet" href="css/userStyle.css">
 <!-- jquery -->
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+ <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- checkbox -->
+ <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+
   <!-- select js -->
   <script type="text/javascript" src="js/select/chosen.jquery.js"></script>
   <script type="text/javascript" src="js/select/prism.js"></script>
 <!-- jCarusel js -->
-  <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-  <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+   <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
+<ul class="menu">
+  <li>
+    <a href="">sometext1</a>
+    <ul class="submenu">
+      <li><a href="">sometext1</a></li>
+      <li><a href="">sometext2</a></li>
+      <li><a href="">sometext3</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">sometext2</a>
+    <ul class="submenu">
+      <li><a href="">sometext1</a></li>
+      <li><a href="">sometext2</a></li>
+      <li><a href="">sometext3</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">sometext3</a>
+    <ul class="submenu">
+      <li><a href="">sometext1</a></li>
+      <li><a href="">sometext2</a></li>
+      <li><a href="">sometext3</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">sometext4</a>
+    <ul class="submenu">
+      <li><a href="">sometext1</a></li>
+      <li><a href="">sometext2</a></li>
+      <li><a href="">sometext3</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">sometext5</a>
+    <ul class="submenu">
+      <li><a href="">sometext1</a></li>
+      <li><a href="">sometext2</a></li>
+      <li><a href="">sometext3</a></li>
+    </ul>
+  </li>
+</ul>
   <div class="wrapper">
     <div class="jcarousel-wrapper">
       <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
@@ -60,19 +105,19 @@
       <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
       <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
     </div>
+    <div class="conteyner clearfix">
     <div class="selectbox">
-      <select data-placeholder="What do you know?" style="width:350px;" multiple class="chosen-select">
-        <option>html/css</option>
-        <option>js</option>
-        <option>jq</option>
-        <option>js</option>
-        <option>jq</option>
-        <option>AJAX</option>
-        <option>JSON</option>
-        <option>Git</option>
-        <option>Node.js</option>
-        <option>Angular.js</option>
-        <option>Atom</option>
+      <select data-placeholder="Your favorite planet" style="width:350px;" multiple class="chosen-select">
+        <option>mercuriy</option>
+        <option>venera</option>
+        <option>earth</option>
+        <option>mars</option>
+        <option>ypiyer</option>
+        <option>uran</option>
+        <option>saturn</option>
+        <option>neptun</option>
+        <option>pluton</option>
+
       </select>
     </div>
     <div class="selectbox">
@@ -80,7 +125,6 @@
         <option>html/css</option>
         <option>js</option>
         <option>jq</option>
-        <option>js</option>
         <option>jq</option>
         <option>AJAX</option>
         <option>JSON</option>
@@ -90,6 +134,24 @@
         <option>Atom</option>
       </select>
     </div>
+    </div>
+<div class="checkbox">
+  <form action="#">
+
+    <span class="niceCheck"><input type="checkbox" name="item1" id="item1" value="1"></span>
+    <label for="item1">item1 </label>
+    <span class="niceCheck"><input type="checkbox" name="item2" id="item2" value="1"></span>
+    <label for="item2">item1 </label>
+    <span class="niceCheck"><input type="checkbox" name="item3" id="item3" value="1"></span>
+    <label for="item3">item1 </label>
+    <span class="niceCheck"><input type="checkbox" name="item4" id="item4" value="1"></span>
+    <label for="item4">item1 </label>
+
+
+
+  </form>
+</div>
+
 
       </div>
     </div>

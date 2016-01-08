@@ -1,5 +1,102 @@
+/*select*/
+*{
+  margin: 0;
+  padding: 0;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .selectbox {
+  padding: 0 5px;
   display: block;
   width: 50%;
   float: left;
+  box-sizing: border-box;
 }
+
+@media screen  and (max-width: 480px) {
+  .selectbox {
+    margin-bottom: 15px;
+    width: 100%;
+    float: none;
+  }
+
+  .jcarousel p {
+    margin: 10px 0 0 0;
+  }
+  .menu a {
+    font-size: 0.4em;
+  }
+}
+/*end select*/
+
+/*menu*/
+.menu {
+  text-align: center;
+  background-color: rgba(0,37,96,.84);
+  position: relative;
+
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 14%;
+}
+
+.menu a {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-size: 1em;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+
+
+
+}
+.submenu {
+  margin-top: 0px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 14%;
+}
+.submenu  li {
+display: block;
+width: 100%;
+text-align: center;
+background-color: rgba(0,37,96,.84);
+border-bottom: 1px solid #fff;
+
+}
+.submenu a {
+  font-size: 12px;
+  text-transform: lowercase;
+
+}
+
+/*end-menu*/
+/*checkbox*/
+.checkbox {
+  margin-top: 25px;
+}
+
+.niceCheck {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  cursor: pointer;
+  background: url('../img/check_radio_sheet.png');
+  vertical-align: -5px;
+}
+
+.niceCheck input {
+  display: none;
+}
+/*end checkbox*/
