@@ -1,6 +1,6 @@
 'usr srtict'
 $(function(){
-/*
+
 var tests =[
 {
   title:'Solar system',
@@ -31,7 +31,7 @@ var tests =[
 ];
 
 localStorage.setItem('test_1', JSON.stringify(tests)); //запис обєкту в localStorage
-*/
+
 var test =  localStorage.getItem('test_1'); // отримання обєкту з localStorage
     test = JSON.parse(test);
     console.log(test);
