@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>lessonjs12-13</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/	material.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/templates/template.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <script type="text/template" id="test">
+    <% for(var i = 0; i < data.length; i++) { %>
+      <div class="conteyner">
+        <h2><%= data[i].title %></h2>
+        <h4>№<%=i+1%> <%= data[i].questions %></h4>
+        <ul>
+          <% for ( var j = 0; j < data[i].answers.length; j++ ) { %>
+            <li>
+              <label for="checkbox<%=+i%><%=+j%>" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events is-upgraded">
+              <input type="checkbox" id="checkbox<%=+i%><%=+j%>" class="mdl-checkbox__input">
+              <%=data[i].answers[j]%><span class="mdl-checkbox__focus-helper"></span>
+              <span class="mdl-checkbox__box-outline">
+              <span class="mdl-checkbox__tick-outline"></span>
+              </span>
+              <span class="mdl-checkbox__ripple-container mdl-js-ripple-effect mdl-ripple--center">
+              <span class="mdl-ripple">
+              </span>
+              </span>
+              </label>
+            </li>
+            <% } %>
+        </ul>
+
+      </div>
+      <% }; %>
+  </script>
+
+
+
+
+  <div class="wrapper">
+    <div class="present">
+
+    </div>
+    <div class="button"><input type="submit" value="check the result" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-checkbox__label" data-upgraded=",MaterialButton"></div>
+  </div>
+
+<div class="modal">
+<div class="meseg">
+  <div class="exit"></div>
+  <div class="hederMeseg">
+    <p>Meseg</p>
+  </div>
+  <div class="notification">
+ <p></p> 
+  <a href="index.html">onse again</a>
+  </div>
+</div>
+  </div>
+</body>
+
+</html>

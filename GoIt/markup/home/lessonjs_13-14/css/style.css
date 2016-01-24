@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'ostrich_sansblack';
+    src: url('../fonts/ostrichsans-black-webfont.eot');
+    src: url('../fonts/ostrichsans-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrichsans-black-webfont.woff2') format('woff2'),
+         url('../fonts/ostrichsans-black-webfont.woff') format('woff'),
+         url('../fonts/ostrichsans-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(249,249,249);
+  color: rgb(96,96,96);
+  font-family: Arial, sans-serif;
+  position: relative;
+  padding: 25px;
+}
+ul li {
+  list-style: none;
+  margin-left: 25px;
+}
+.modal{
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0,0,0,.53);
+  z-index: 100;
+}
+  .meseg{
+    width: 33%;
+    background-color: rgb(255,255,255);
+    position: fixed;
+    top: 25%;
+    left: 33%;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+}
+.exit {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  border-radius: 50%;
+  background-color: #fff;
+background-image: url('../img/icon-close-circled-128.png');
+background-size: cover;
+transition: all ease-in-out .1s;
+
+}
+.exit:hover {
+  background-color: #585858;
+}
+.meseg p {
+  margin: 0;
+
+}
+.hederMeseg {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  background-color: rgb(0,18,50);
+}
+.notification {
+  padding: 15px 0;
+  text-align: center;
+}
+.notification a {
+  margin: 20px auto 5px auto;
+  display: block;
+  width: 100px;
+  color: #fff;
+  padding: 5px;
+  background-color: rgb(0,18,50);
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+  transition: all ease-in-out .3s;
+
+}
+.notification a:hover {
+    background-color: rgb(3,47,126);
+
+}
+
+.wrapper {
+
+  width: 30%;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: rgb(255,255,255);
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+  position: relative;
+}
+.present{
+  margin: 25px 0;
+}
+label {
+  cursor: pointer;
+  margin-top: 5px;
+}
+h2 {
+  font-size: 14px;
+}
+h4 {
+  font-family: 'ostrich_sansblack', sans-serif;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(238,238,238);
+}
+
+h5 {
+  margin: 20px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+  margin-top: 10px;
+  text-align: center;
+}
