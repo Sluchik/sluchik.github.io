@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>lesson19-20</title>
@@ -8,67 +7,136 @@
   <link rel="stylesheet" href="css/select/chosen.css">
   <link rel="stylesheet" href="css/select/prism.css">
   <!-- carusel css -->
-  <link rel="stylesheet" type="text/css" href="css/customstyle.css">
-  <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/customstyle.css"> -->
   <!-- user css -->
   <link rel="stylesheet" href="css/userStyle.css">
-<!-- jquery -->
- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<!-- checkbox -->
- <script type="text/javascript" src="js/jquery.checkbox.js"></script>
-
-  <!-- select js -->
-  <script type="text/javascript" src="js/select/chosen.jquery.js"></script>
-  <script type="text/javascript" src="js/select/prism.js"></script>
-<!-- jCarusel js -->
-   <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+  <!-- jquery libs -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- jquert color libs -->
+  <script type="text/javascript" src="js/jquery.color.js"></script>
+  <!-- jquert checkbox libs -->
+  <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+  <!--  jquert select libs -->
+  <script type="text/javascript" src="js/libs/select/chosen.jquery.js"></script>
+  <script type="text/javascript" src="js/libs/select/prism.js"></script>
+  <!-- jquert jCarusel lib -->
+  <script type="text/javascript" src="js/libs/jCarusel/jquery.jcarousel.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
 </head>
+
 <body>
-<ul class="menu">
-  <li>
-    <a href="">sometext1</a>
-    <ul class="submenu">
-      <li><a href="">sometext1</a></li>
-      <li><a href="">sometext2</a></li>
-      <li><a href="">sometext3</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="">sometext2</a>
-    <ul class="submenu">
-      <li><a href="">sometext1</a></li>
-      <li><a href="">sometext2</a></li>
-      <li><a href="">sometext3</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="">sometext3</a>
-    <ul class="submenu">
-      <li><a href="">sometext1</a></li>
-      <li><a href="">sometext2</a></li>
-      <li><a href="">sometext3</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="">sometext4</a>
-    <ul class="submenu">
-      <li><a href="">sometext1</a></li>
-      <li><a href="">sometext2</a></li>
-      <li><a href="">sometext3</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="">sometext5</a>
-    <ul class="submenu">
-      <li><a href="">sometext1</a></li>
-      <li><a href="">sometext2</a></li>
-      <li><a href="">sometext3</a></li>
-    </ul>
-  </li>
-</ul>
+  <!-- drop-down menu -->
+  <ul class="menu">
+    <li class="menu_categoty">
+      <a href="">Home</a>
+      <ul class="submenu">
+        <li><a href="">sometext1</a>
+          <div class="mark"></div>
+          <ul class="sub_submenu">
+            <li><a href="">sat1</a></li>
+            <li><a href="">sat2</a></li>
+            <li><a href="">sat3</a></li>
+          </ul>
+        </li>
+        <li><a href="">sometext2</a>
+          <div class="mark"></div>
+          <ul class="sub_submenu">
+            <li><a href="">sat1</a></li>
+            <li><a href="">sat2</a></li>
+            <li><a href="">sat3</a></li>
+          </ul>
+        </li>
+        <li><a href="">sometext3</a>
+          <div class="mark"></div>
+          <ul class="sub_submenu">
+            <li><a href="">sat1</a></li>
+            <li><a href="">sat2</a></li>
+            <li><a href="">sat3</a></li>
+          </ul>
+        </li>
+        <li><a href="">sometext1</a></li>
+        <li><a href="">sometext2</a></li>
+        <li><a href="">sometext3</a>
+          <div class="mark"></div>
+          <ul class="sub_submenu">
+            <li><a href="">sat1</a></li>
+            <li><a href="">sat2</a></li>
+            <li><a href="">sat3</a>
+              <div class="mark"></div>
+              <ul class="sub_submenu">
+                <li><a href="">sat1</a></li>
+                <li><a href="">sat2</a></li>
+                <li><a href="">sat3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="menu_categoty">
+      <a href="">News</a>
+      <ul class="submenu">
+
+        <li><a href="">New</a></li>
+        <li><a href="">Old</a></li>
+      </ul>
+    </li>
+    <li class="menu_categoty">
+      <a href="">Satellites</a>
+      <ul class="submenu">
+        <li>
+          <a href="">Mercurii</a>
+          <div class="mark"></div>
+          <ul class="sub_submenu">
+            <li><a href="">sat1</a></li>
+            <li><a href="">sat2</a></li>
+            <li><a href="">sat3</a></li>
+          </ul>
+        </li>
+        <li><a href="">Venera</a></li>
+        <li><a href="">Earth</a></li>
+        <li><a href="">Mars</a></li>
+      </ul>
+    </li>
+    <li class="menu_categoty">
+      <a href="">Weather</a>
+      <ul class="submenu">
+        <li><a href="">Europa</a></li>
+        <li><a href="">North America</a>
+          <div class="mark"></div>
+          <ul class="sub_submenu">
+            <li><a href="">sat1</a></li>
+            <li><a href="">sat2</a></li>
+            <li><a href="">sat3</a>
+              <div class="mark"></div>
+              <ul class="sub_submenu">
+                <li><a href="">sat1</a></li>
+                <li><a href="">sat2</a></li>
+                <li><a href="">sat3</a></li>
+              </ul></li>
+          </ul>
+        </li>
+        <li><a href="">South Amerika</a></li>
+      </ul>
+    </li>
+    <li class="menu_categoty">
+      <a href="">About as</a>
+      <ul class="submenu">
+        <li><a href="">Company</a></li>
+        <li><a href="">Cheleng</a></li>
+        <li><a href="">Contact</a>
+          <div class="mark"></div>
+          <ul class="sub_submenu">
+            <li><a href="">sat1</a></li>
+            <li><a href="">sat2</a></li>
+            <li><a href="">sat3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
   <div class="wrapper">
+
     <div class="jcarousel-wrapper">
       <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
         <ul>
@@ -105,58 +173,47 @@
       <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
       <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
     </div>
-    <div class="conteyner clearfix">
-    <div class="selectbox">
-      <select data-placeholder="Your favorite planet" style="width:350px;" multiple class="chosen-select">
-        <option>mercuriy</option>
-        <option>venera</option>
-        <option>earth</option>
-        <option>mars</option>
-        <option>ypiyer</option>
-        <option>uran</option>
-        <option>saturn</option>
-        <option>neptun</option>
-        <option>pluton</option>
-
-      </select>
-    </div>
-    <div class="selectbox">
-      <select data-placeholder="What do you know?" style="width:350px;"  class="chosen-select">
-        <option>html/css</option>
-        <option>js</option>
-        <option>jq</option>
-        <option>jq</option>
-        <option>AJAX</option>
-        <option>JSON</option>
-        <option>Git</option>
-        <option>Node.js</option>
-        <option>Angular.js</option>
-        <option>Atom</option>
-      </select>
-    </div>
-    </div>
-<div class="checkbox">
-  <form action="#">
-
-    <span class="niceCheck"><input type="checkbox" name="item1" id="item1" value="1"></span>
-    <label for="item1">item1 </label>
-    <span class="niceCheck"><input type="checkbox" name="item2" id="item2" value="1"></span>
-    <label for="item2">item1 </label>
-    <span class="niceCheck"><input type="checkbox" name="item3" id="item3" value="1"></span>
-    <label for="item3">item1 </label>
-    <span class="niceCheck"><input type="checkbox" name="item4" id="item4" value="1"></span>
-    <label for="item4">item1 </label>
-
-
-
-  </form>
-</div>
-
-
+      <div class="conteyner clearfix">
+        <div class="selectbox">
+          <select data-placeholder="Your favorite planet" style="width:350px;" multiple class="chosen-select">
+            <option>Mercury</option>
+            <option>Venus</option>
+            <option>Earth</option>
+            <option>Mars</option>
+            <option>Jupiter</option>
+            <option>Saturn</option>
+            <option>Uranus</option>
+            <option>Neptune</option>
+          </select>
+        </div>
+        <div class="selectbox">
+          <select data-placeholder="What do you know?" style="width:350px;" class="chosen-select">
+            <option>Select planet</option>
+            <option>Mercury</option>
+            <option>Venus</option>
+            <option>Earth</option>
+            <option>Mars</option>
+            <option>Jupiter</option>
+            <option>Saturn</option>
+            <option>Uranus</option>
+            <option>Neptune</option>
+          </select>
+        </div>
       </div>
-    </div>
+      <div class="checkbox">
+        <form action="#">
+          <span class="niceCheck"><input type="checkbox" name="item1" id="item1" value="1"></span>
+          <label for="item1">item1 </label>
+          <span class="niceCheck"><input type="checkbox" name="item2" id="item2" value="1"></span>
+          <label for="item2">item1 </label>
+          <span class="niceCheck"><input type="checkbox" name="item3" id="item3" value="1"></span>
+          <label for="item3">item1 </label>
+          <span class="niceCheck"><input type="checkbox" name="item4" id="item4" value="1"></span>
+          <label for="item4">item1 </label>
+        </form>
+      </div>
   </div>
-
+  </div>
+  </div>
 </body>
-
 </html>

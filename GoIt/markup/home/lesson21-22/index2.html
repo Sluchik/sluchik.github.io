@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CV_template</title>
+  <link rel="stylesheet" href="css/sablonizator.css">
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src='js/lodash.js'></script>
+  <script type="text/javascript" src='js/template.js'></script>
+
+</head>
+
+<body>
+  <script type="text/template" id="tem">
+    <% for(var i = 0; i < data.length; i++) { %>
+      <div class="profile">
+        <div class="container  boxshadow">
+          <h2><%=data[i].personName%></h2>
+          <div class="imgBox centr">
+            <img src="<%=data[i].avatar%>" alt="Аватарка" width="135" class="boxshadow">
+          </div>
+          <p class="m1">
+            <%=data[i].job%>
+          </p>
+          <h3 class="borderTop">Goal:</h3>
+          <p>
+            <%=data[i].goal%>
+          </p>
+          <h3>Skills:</h3>
+          <ul>
+            <% for ( var j = 0; j < data[i].skils.length; j++ ) { %>
+              <li>
+                <%=data[i].skils[j]%>
+              </li>
+              <% } %>
+          </ul>
+          <div>
+            <h3 class="borderTop">Contacts</h3>
+            <p><span>Phone: </span>
+              <a href="tel/<%=data[i].phone%>">
+                <%=data[i].phone%>
+              </a>
+            </p>
+            <p>Email:
+              <a href="https://<%=data[i].email%>" target="_blank">
+                <%=data[i].email%>
+              </a>
+            </p>
+            <p>FS:
+              <a href="https://<%=data[i].fs%>" target="_blank">
+                <%=data[i].fs%>
+              </a>
+            </p>
+            <p>Skyp:
+              <%=data[i].skyp%>
+            </p>
+          </div>
+          <div>
+            <h3 class="borderTop">Feedback</h3>
+            <p>
+              <%=data[i].feedback%>
+            </p>
+          </div>
+        </div>
+        <% } %>
+
+  </script>
+
+  <div class="wraper">
+  </div>
+
+  </div>
+  <script type="text/javascript" src='js/templateData.js'></script>
+</body>
+
+</html>

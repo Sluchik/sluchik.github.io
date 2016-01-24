@@ -1,13 +1,288 @@
-/*select*/
-*{
+/*common style*/
+* {
   margin: 0;
   padding: 0;
 }
+
+body {
+    background: #c3c3c3;
+    margin: 0;
+    padding: 0;
+    font: 1em 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width:700px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
 }
+
+/*=============================menu=======================*/
+
+
+
+.active {
+background-color: rgba(83,112,148,1);
+}
+.menu {
+  text-align: center;
+  background-color: rgba(0,21,55,1);
+  position: relative;
+  z-index: 100;
+}
+
+.menu>li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 14%;
+
+
+
+}
+
+.menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-size: 1em;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+
+/*submenu*/
+.submenu {
+
+  text-align: center;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 14%;
+  background-color: rgba(0,21,55,.9);
+
+}
+
+.submenu  li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(82,82,82,.4);
+  position: relative;
+  transition: all ease-in-out .2s;
+}
+
+.submenu a {
+  font-size: 12px;
+  text-transform: lowercase;
+}
+.mark {
+  position: absolute;
+    top: 40%;
+    right: 0;
+    border: 3px solid transparent;
+    border-left: 6px solid rgb(255,255,255);
+}
+.sub_submenu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  display: none;
+  background-color: rgba(0,21,55,.9);
+}
+
+.sub_submenu li {
+  width: 100%;
+}
+
+/*==========================end-menu=======================*/
+.conteyner-box {
+  display: flex;
+  justify-content: space-between;
+}
+article {
+  
+}
+
+/*=================jCarusel style==========================*/
+
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid rgba(255,255,255,.8);
+    /*-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;*/
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    width: 200px;
+    float: left;
+    border: 1px solid #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 4px #F0EFE7;
+    -moz-box-shadow: 0 0 4px #F0EFE7;
+    box-shadow: 0 0 4px #F0EFE7;
+}
+
+.jcarousel-control-prev {
+    left: 15px;
+}
+
+.jcarousel-control-next {
+    right: 15px;
+}
+
+
+
+.jcarousel p {
+  margin-top: 10px;
+  text-align: center;
+  font: 12px Arial, sans-serif;
+  color: rgb(75,75,75);
+}
+
+
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+
+/*================= end jCarusel style==========================*/
+
+
+
+/*=========================select style=====================*/
+
+
+
 
 .selectbox {
   padding: 0 5px;
@@ -27,62 +302,17 @@
   .jcarousel p {
     margin: 10px 0 0 0;
   }
+
   .menu a {
     font-size: 0.4em;
   }
 }
-/*end select*/
-
-/*menu*/
-.menu {
-  text-align: center;
-  background-color: rgba(0,37,96,.84);
-  position: relative;
-
-}
-.menu li {
-  list-style: none;
-  display: inline-block;
-  text-align: center;
-  width: 14%;
-}
-
-.menu a {
-  padding: 5px;
-  text-decoration: none;
-  color: rgb(255,255,255);
-  font-size: 1em;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
 
 
+/*==================end select==============================*/
 
-}
-.submenu {
-  margin-top: 0px;
-  text-align: center;
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  width: 14%;
-}
-.submenu  li {
-display: block;
-width: 100%;
-text-align: center;
-background-color: rgba(0,37,96,.84);
-border-bottom: 1px solid #fff;
 
-}
-.submenu a {
-  font-size: 12px;
-  text-transform: lowercase;
-
-}
-
-/*end-menu*/
-/*checkbox*/
+/*================checkbox style============================*/
 .checkbox {
   margin-top: 25px;
 }
@@ -99,4 +329,4 @@ border-bottom: 1px solid #fff;
 .niceCheck input {
   display: none;
 }
-/*end checkbox*/
+/*=================end checkbox===============================*/

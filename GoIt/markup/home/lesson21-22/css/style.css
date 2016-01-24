@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p span {
+  width: 50px;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav__conteyner{
+  position: relative;
+  max-width: 610px;
+  width: 100%;
+  margin: 0 auto;
+}
+.carousel__nav__left,
+.carousel__nav__right {
+  float: left;
+  display: block;
+  padding: 10px;
+  background-color: rgb(121,121,121);
+  border-radius: 10px;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+}
+.carousel__nav__left {
+ left: -10px;
+ z-index: 1000;
+}
+.carousel__nav__right {
+right: -10px;
+z-index: 1000;
+}
+
+
+.carousel {
+  width: 610px;
+  overflow: hidden;
+  text-align: center;
+  margin: 25px auto;
+
+
+}
+.carousel__block {
+  display: block;
+  list-style: none;
+  width: 1000000px;
+  position: relative;
+  left: -125px;
+}
+.carousel-element {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+.carousel-element img {
+  max-width: 200px;
+  width: 100%;
+}

@@ -14,10 +14,7 @@ function() {
 });
 })(jQuery);
 function changeCheck(el)
-/*
-    функция смены вида и значения чекбокса
-    el - span контейнер дял обычного чекбокса
-    input - чекбокс
+/*  функция смены вида и значения чекбокса  el - span контейнер дял обычного чекбокса  input - чекбокс
 */ {
   var el = el,
           input = el.find("input").eq(0);
@@ -30,7 +27,6 @@ else {
   el.css("background-position","0 0");
         input.attr("checked", false)
 }
-
 return true;
 }
 
@@ -41,6 +37,5 @@ var el = el,
       if(input.attr("checked")) {
         el.css("background-position","0 -19px");
 }
-
 return true;
 }
