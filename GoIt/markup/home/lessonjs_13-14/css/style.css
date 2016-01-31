@@ -33,6 +33,7 @@ ul li {
   position: absolute;
   background-color: rgba(0,0,0,.53);
   z-index: 100;
+
 }
   .meseg{
     width: 33%;
@@ -44,6 +45,9 @@ ul li {
     -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
     -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
+    -webkit-transition: all 600ms cubic-bezier(0,.69,1,.55) ;
+   transition:         all 600ms cubic-bezier(0,.69,1,.55) ; 
+   display: none;
 }
 .exit {
   width: 20px;
@@ -75,7 +79,8 @@ transition: all ease-in-out .1s;
   padding: 15px 0;
   text-align: center;
 }
-.notification a {
+.meseg a {
+  text-align: center;
   margin: 20px auto 5px auto;
   display: block;
   width: 100px;
