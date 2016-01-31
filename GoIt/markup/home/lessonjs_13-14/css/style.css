@@ -45,9 +45,7 @@ ul li {
     -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
     -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.27);
-    -webkit-transition: all 600ms cubic-bezier(0,.69,1,.55) ;
-   transition:         all 600ms cubic-bezier(0,.69,1,.55) ; 
-   display: none;
+    display: none;
 }
 .exit {
   width: 20px;
@@ -57,9 +55,10 @@ ul li {
   top: -8px;
   border-radius: 50%;
   background-color: #fff;
-background-image: url('../img/icon-close-circled-128.png');
-background-size: cover;
-transition: all ease-in-out .1s;
+  background-image: url('../img/icon-close-circled-128.png');
+  cursor: pointer;
+  background-size: cover;
+  transition: all ease-in-out .1s;
 
 }
 .exit:hover {
@@ -80,12 +79,12 @@ transition: all ease-in-out .1s;
   text-align: center;
 }
 .meseg a {
-  text-align: center;
-  margin: 20px auto 5px auto;
-  display: block;
   width: 100px;
-  color: #fff;
+  margin: 10px auto 25px auto;
   padding: 5px;
+  text-align: center;
+  color: #fff;
+  display: block;
   background-color: rgb(0,18,50);
   text-decoration: none;
   border-radius: 5px;
@@ -132,6 +131,9 @@ h4 {
 h5 {
   margin: 20px 0;
   font-family: 'Open Sans', sans-serif;
+}
+h6 {
+  font-weight: 600;
 }
 
 .button {

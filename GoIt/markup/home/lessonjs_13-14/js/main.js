@@ -19,9 +19,10 @@ var tests =[
   answers: [
     'Moon',
     'Phobos',
+    'Deimos',
     'Callisto',
   ],
-    rightAnswer: [0, 1, 0]
+    rightAnswer: [0, 1, 1, 0]
 
 
 },
@@ -64,13 +65,17 @@ var $template = tmpl($html,{
 //в шаблон потрібно передавати обєет а не масив !масив не працює
 $('.present').append($template);
 
-
+function persentCorrectanswers(localAnswers, userAnswers ){
+  var total = (100/localAnswers)*userAnswers;
+  return total
+}
 
 function CheckAnswers(){
 
 var $listanswers = 0;
 var counter = 0;
 var wroungcounter = 0;
+var $totalpersent;
 
 for(var i = 0; i < test.length; i++){
 
@@ -85,7 +90,7 @@ for(var i = 0; i < test.length; i++){
           var $localAnswer = test[i].rightAnswer[j];
 
             if($localAnswer){
-              $listanswers++ //записує скільки правильних відповідей є
+              $listanswers++ //записує скільки правильних відповідей
             }
            if($inputs){
 
@@ -98,16 +103,13 @@ for(var i = 0; i < test.length; i++){
      }
 
 }
-  console.log('corect answers :'+ counter);
-  console.log('wrong answers :'+ wroungcounter);
-
   if($listanswers == counter && wroungcounter == 0){
     $('.notification').append('<h6>Congratulation! The test is passed!</h6>');
     $('.notification h6').css({
       color:'green'
     });
   } else {
-    $('.notification').append('<h6>Fail! Triy again</h6>');
+    $('.notification').append('<h6>Fail! Try again.</h6>');
     $('.notification h6').css({
       color:'red'
   });
@@ -116,12 +118,14 @@ for(var i = 0; i < test.length; i++){
   $('.modal').show();
   $('.meseg').show().animate();
 
-  $('.notification').append('<p>Corect answers :'+ counter + ' from '+ $listanswers+  '</p>' + '<p>Wrong answers :'+ wroungcounter +'</p>');
+  $percent = persentCorrectanswers($listanswers, counter);
+  //$totalpersent = (100/$listanswers)*counter;
+  $('.notification').append('<p>Corect answers: '+ counter + ' from '+ $listanswers+  '</p>' + '<p>Wrong answers: '+ wroungcounter +'</p>'+ '<p>Percent correct answers: ' + $percent + '%</p>');
+
 }
 
 
 $('.button').on('click',CheckAnswers);
-
 $('.exit').on('click', function(){
    $('input:checkbox').removeAttr('checked');
    $('.notification').html('');
