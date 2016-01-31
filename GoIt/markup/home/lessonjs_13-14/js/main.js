@@ -128,6 +128,7 @@ for(var i = 0; i < test.length; i++){
 $('.button').on('click',CheckAnswers);
 $('.exit').on('click', function(){
    $('input:checkbox').removeAttr('checked');
+   location.reload();
    $('.notification').html('');
    $('.modal').hide();
  })
