@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lessonjs-15-16</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/templat/templat.js"></script>
+</head>
+<body>
+<script type="template/text" id='template'>
+<% for(var i = 0; i < data.results.length; i++) { %>
+    <div class="conteyner">
+    <h3 class ="title"><a href ="<%= data.results[i].url %>" target ="_blank"><%= data.results[i].title  %></a></h3>
+    <p class = "link"><%= data.results[i].url %></p>
+    <p class = "info"><%= data.results[i].content %></p>
+    </div>
+    <% }; %>
+</script>
+<div class="header">
+  <div class="search">
+    </section>
+    <ul class="input-list style-1 clearfix">
+    <li>
+      <input type="text" placeholder="" id ='searcData'>
+    </li>
+    <li><input type="button" value="" id ='button'></li>
+  </ul>
+</section>
+      <!-- <input type="text" id ='searcData' placeholder="">
+       -->
+  </div>
+</div>
+<div class="wrapper">
+
+  <div class="present"></div>
+</div>
+
+<script type="text/javascript" src = 'js/main.js'></script>
+</body>
+</html>

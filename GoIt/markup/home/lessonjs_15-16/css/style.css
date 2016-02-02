@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.header {
+  padding: 10px 15px;
+  background-color: #F1F1F1;
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+}
+
+.input-list li {
+  display: inline-block;
+  margin-left: 9px;
+}
+
+input[type="button"] {
+  height: 33px;
+  background-color: #4700de;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-image: url(../img/magnifying-glass34.png);
+  background-repeat: no-repeat;
+  font-size: 50%;
+  background-position: 8px 9px;
+  cursor: pointer;
+  transition: all .5s;
+}
+input[type="button"]:hover {
+  background-color: #4100cb;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.style-1 input[type="text"] {
+  padding: 5px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+  border: solid 1px #2d00c3;
+  //  box-shadow: 0 0 .1px .1px #6335fc;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.present {
+  width: 50%;
+}
+
+.title a {
+  color: #609;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+a:link {
+  color: #1a0dab;
+}
+
+.title a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  color: #006621;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.info {
+  line-height: 1.4;
+  word-wrap: break-word;
+  color: #545454;
+  font-size: small;
+  zoom: 1;
+}
