@@ -81,10 +81,12 @@ input[type="text"]:focus {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+
 }
 
 .present {
   width: 50%;
+  margin-bottom: 50px;
 }
 
 .title a {
