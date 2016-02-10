@@ -8,8 +8,6 @@ function GoogleCallback(jqueryObj, data){
   console.log('data', data);
 }
 
-
-
 $(function(){
 
 function httprRequest(e){
@@ -32,58 +30,49 @@ $('#target').submit(httprRequest);
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // home work part 2
-/*
+
 
 $(function(){
 
-function Humen(name, age, sex, he, weight){
-  this.name = name;
+function Humen(firstName, lastName, age, sex, height, weight) {
+  this.firstName = firstName;
+  this.lastName =  lastName;
   this.age = age;
   this.sex = sex;
-  this.he = he;
+  this.height = height;
   this.weight = weight;
 }
-function Worker (job, salary){
-  Humen.call(this);
-  this.job = job;
+
+function Worker(firstName, lastName, age, sex, height, weight, workPlace, salary){
+  Humen.apply(this, arguments);
+  this.workPlace = workPlace;
   this.salary = salary;
 }
 
-
-Worker.prototype.work = function(){
-  console.log('I am working');
+function Student(firstName, lastName, age, sex, height, weight,  studyPlace, grants) {
+  Humen.apply(this, arguments);
+  this.studyPlace = studyPlace;
+  this.grants = grants;
 }
 
-var andrii = new Worker({
-  name: 'Andrii',
-  age: 18,
-  sex: 'mail',
-  he: 182,
-  weight: 72,
-  job: 'Dev',
-  salary: 2000
-}) ;
+Humen.prototype.introduse = function(){
+  console.log('Hi I am '+ this.firstName + ' ' + this.lastName);
+}
 
-console.log(andrii.name);
+Worker.prototype = Object.create(Humen.prototype);
+Worker.prototype.work = function() {
+  console.log('I am wrorking');
+}
+
+Student.prototype = Object.create(Humen.prototype);
+Student.prototype.see = function () {
+   console.log('I like Game of the Trons');
+}
+var andrii = new Worker('Andrii', 'Sloochik', 26, 'mail', 182, 72, 'ArtBrains', 'QA');
+  console.log(andrii);
+  andrii.work();
+var petro = new Student('Petro', 'Parasuk', 24, 'mail', 182, 72, 'LP', 2000);
+  console.log(petro);
+  petro.see();
 });
-*/
