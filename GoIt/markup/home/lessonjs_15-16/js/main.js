@@ -35,22 +35,22 @@ $('#target').submit(httprRequest);
 
 $(function(){
 
-function Humen(firstName, lastName, age, sex, height, weight) {
-  this.firstName = firstName;
-  this.lastName =  lastName;
-  this.age = age;
-  this.sex = sex;
-  this.height = height;
-  this.weight = weight;
+function Humen(params) {
+  this.firstName = params.firstName;
+  this.lastName =  params.lastName;
+  this.age = params.age;
+  this.sex = params.sex;
+  this.height = params.height;
+  this.weight = params.weight;
 }
 
-function Worker(firstName, lastName, age, sex, height, weight, workPlace, salary){
+function Worker(params, workParams){
   Humen.apply(this, arguments);
-  this.workPlace = workPlace;
-  this.salary = salary;
+  this.workPlace = workParams.workPlace;
+  this.salary = workParams.salary;
 }
 
-function Student(firstName, lastName, age, sex, height, weight,  studyPlace, grants) {
+function Student(params,  studyPlace, grants) {
   Humen.apply(this, arguments);
   this.studyPlace = studyPlace;
   this.grants = grants;
@@ -64,15 +64,71 @@ Worker.prototype = Object.create(Humen.prototype);
 Worker.prototype.work = function() {
   console.log('I am wrorking');
 }
-
-Student.prototype = Object.create(Humen.prototype);
-Student.prototype.see = function () {
-   console.log('I like Game of the Trons');
+//
+// Student.prototype = Object.create(Humen.prototype);
+// Student.prototype.see = function () {
+//    console.log('I like Game of the Trons');
+// }
+var andrii = new Worker({
+  firstName: 'Andrii',
+  lastName: 'Sloochik',
+  age: 26,
+  height: 182,
+  weight: 72,
+  sex: 'maile'
+},
+{
+  workPlace: 'ArtBrains',
+  salary: 400
 }
-var andrii = new Worker('Andrii', 'Sloochik', 26, 'mail', 182, 72, 'ArtBrains', 'QA');
+);
   console.log(andrii);
+  andrii.introduse();
   andrii.work();
-var petro = new Student('Petro', 'Parasuk', 24, 'mail', 182, 72, 'LP', 2000);
-  console.log(petro);
-  petro.see();
+
+var sergii = new Worker({
+    firstName: 'Sergii',
+    age: 22,
+    height: 178,
+    weight: 70,
+    sex: 'maile'
+  },
+  {
+    workPlace: 'GB',
+    salary: 350
+  }
+  );
+    console.log(sergii);
+  sergii.introduse();
+    sergii.work();
+//
+//   andrii.work();
+// var petro = new Student('Petro', 'Parasuk', 24, 'mail', 182, 72, 'LP', 2000);
+//   console.log(petro);
+//   petro.see();
+
+// proto
+
+
+
+
+
+
+
+// для підримки ie8 and low
+var animal = {
+  canRun: true
+}
+var vatrushka = Object.create(animal);
+console.log(vatrushka);
+
+function inherit(proto){
+  function F(){};
+  F.prototype = proto;
+  return new F;
+};
+
+var vatrushka2 = inherit(animal);
+console.log(vatrushka2);
+
 });

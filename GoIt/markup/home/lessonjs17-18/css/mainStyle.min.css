@@ -1,0 +1,27 @@
+.copyright,.footer a,.menu a,.prodact p{color:#2c2c2c;font-size:13px}
+.content,.footer,.menu,.nav{overflow:hidden;position:relative}
+.footer li,.nav ul{list-style:none}
+.content{margin-top:40px}
+.menu{width:240px;border:1px solid #c8c8c8;float:left}
+.menu li{border-top:1px solid #c8c8c8}
+.menu li:first-child{border-top:0 solid #c8c8c8}
+.menu a{padding-left:20px;display:block;-webkit-transition:.2s all;transition:.2s all;line-height:40px}
+.menu a:hover{padding-left:38px;background-color:#f9f9f9}
+.prodact{width:680px;float:right}
+.prodact p{padding-left:24px;line-height:20px}
+.copyright,.footer a,.nav a{display:block;line-height:40px}
+.prodactImg{text-align:center;margin-bottom:40px;border:1px solid #c8c8c8}
+.prodactImg img{background-size:cover}
+.footer{margin-top:60px;background-color:#e1e1e1}
+.footer li{display:block;margin-left:90px;float:left}
+.footer a:hover{text-decoration:underline}
+.copyright{padding-right:90px;float:right}
+.nav{margin-top:40px;background:#5e5e5e;background:-webkit-linear-gradient(#5e5e5e 1%,#525151 47%,#454444 100%);background:linear-gradient(#5e5e5e 1%,#525151 47%,#454444 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#454444', GradientType=0 )}
+.nav li{display:block;float:left;border-right:1px solid #838383}
+.nav li:hover{background:#4a4a4a;background:-webkit-gradient(linear,left top,left bottom,color-stop(1%,#4a4a4a),color-stop(47%,#3c3c3c),color-stop(100%,#4a4a4a));background:-webkit-linear-gradient(top,#4a4a4a 1%,#3c3c3c 47%,#4a4a4a 100%);background:linear-gradient(to bottom,#4a4a4a 1%,#3c3c3c 47%,#4a4a4a 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#4a4a4a', GradientType=0 )}
+.nav a{padding:0 40px;color:#fff;font-size:15px}
+.box{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;border-radius:2px;-webkit-transition:all .5s;transition:all .5s}
+*{margin:0;padding:0}
+a{text-decoration:none}
+body{font-family:Arial,sans-serif;background-color:#f9f9f9}
+.wraper{width:970px;margin:0 auto;padding:40px 45px;background-color:#fff;box-shadow:0 1px 3px 1px rgba(219,219,219,1)}

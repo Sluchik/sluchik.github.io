@@ -1,0 +1,30 @@
+.banners {
+  float: right;
+  width: 45%;
+  border-radius: 10px; }
+  .banners h3 {
+    color: #000;
+    font-family: ubuntumedium;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 25px; }
+
+.accordion .accordion__section {
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #d7d7d7; }
+  .accordion .accordion__section .accordion__section__title {
+    display: block;
+    padding: 10px 0  10px 30px;
+    color: #000;
+    font-family: ubuntumedium;
+    text-transform: uppercase;
+    background-color: #fff;
+    background-image: url(../../img/plus.png);
+    background-repeat: no-repeat;
+    background-position: 10px center; }
+
+.accordion .accordion__section__content {
+  display: none;
+  margin: 25px 5px 25px 35px;
+  color: #8a8a8a; }

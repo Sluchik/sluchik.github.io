@@ -1,0 +1,45 @@
+
+/*header*/
+.nav {
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+  background: rgb(94,94,94);
+  background: -webkit-linear-gradient(rgb(94,94,94) 1%, rgb(82,81,81) 47%, rgb(69,68,68) 100%);
+  background: -o-linear-gradient(rgb(94,94,94) 1%, rgb(82,81,81) 47%, rgb(69,68,68) 100%);
+  background: linear-gradient(rgb(94,94,94) 1%, rgb(82,81,81) 47%, rgb(69,68,68) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#454444',GradientType=0 );
+
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav  li{
+  display: block;
+  float:left;
+  border-right: 1px solid #838383;
+
+}
+
+.nav li:hover{
+  background: rgb(74,74,74);
+  background: -moz-linear-gradient(top,  rgb(74,74,74) 1%, rgb(60,60,60) 47%, rgb(74,74,74) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgb(74,74,74)), color-stop(47%,rgb(60,60,60)), color-stop(100%,rgb(74,74,74)));
+  background: -webkit-linear-gradient(top,  rgb(74,74,74) 1%,rgb(60,60,60) 47%,rgb(74,74,74) 100%);
+  background: -o-linear-gradient(top,  rgb(74,74,74) 1%,rgb(60,60,60) 47%,rgb(74,74,74) 100%);
+  background: -ms-linear-gradient(top,  rgb(74,74,74) 1%,rgb(60,60,60) 47%,rgb(74,74,74) 100%);
+  background: linear-gradient(to bottom,  rgb(74,74,74) 1%,rgb(60,60,60) 47%,rgb(74,74,74) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#4a4a4a',GradientType=0 );
+
+}
+
+.nav a {
+  line-height: 40px;
+  display: block;
+  padding: 0 40px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 40px;
+}

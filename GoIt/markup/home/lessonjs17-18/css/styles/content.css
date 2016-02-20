@@ -1,0 +1,55 @@
+
+/*content*/
+.content {
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.menu {
+  width: 240px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #c8c8c8;
+  float: left;
+}
+
+.menu li {
+  border-top: 1px solid #c8c8c8;
+
+}
+.menu li:first-child {
+  border-top: 0px solid #c8c8c8;
+}
+.menu a {
+  padding-left: 20px;
+  display: block;
+  transition: 0.2s all;
+  color: #2c2c2c;
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.menu a:hover  {
+  padding-left: 38px;
+    background-color: #f9f9f9;
+
+}
+
+.prodact {
+  width: 680px;
+  float: right;
+}
+.prodact p {
+  color: #2c2c2c;
+  padding-left: 24px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.prodactImg {
+  text-align: center;
+  margin-bottom: 40px;
+  border: 1px solid #c8c8c8;
+}
+.prodactImg img {
+  background-size: cover;
+}
