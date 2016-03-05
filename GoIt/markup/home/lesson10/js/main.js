@@ -1,4 +1,5 @@
 
+
 var number = +prompt('Enter your number');
 var n = +prompt('Enter your power ');
 
@@ -9,5 +10,6 @@ function pow(number, n) {
    };
    return result;
 };
+}
 
 console.log('Your result: ' + pow(number, n));

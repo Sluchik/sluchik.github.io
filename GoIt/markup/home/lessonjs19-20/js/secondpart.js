@@ -52,7 +52,7 @@ var data = [
       {
         "id": 1,
         "name": "Sharron Pace"
-      }
+      },
     ],
     "isActive": true,
     "about": "Consectetur velit officia eiusmod esse labore sint anim nostrud elit nulla dolore dolor. In aute ad incididunt pariatur cupidatat do deserunt irure. Exercitation cillum enim incididunt amet Lorem ut Lorem nulla.\r\n",
@@ -273,3 +273,25 @@ var data = [
     "_id": "56bdc3396fdbaec5ee4ca929"
   }
 ]
+
+
+var sendTolocal = JSON.stringify(data);
+var userData = JSON.parse(sendTolocal);
+
+
+//1. Массив скиллов (поле skills) всех людей, не должно быть повторяющихся скиллов, так же они должны быть отсортированы по алфавиту;
+
+var skills = _.sortBy(_.uniq(_.union(_.flatten(_.map(userData, 'skills')))), _.toLower);
+ console.log('User skilss: ',skills);
+
+//2. Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (friends);
+
+var sortedPerfriend = _.sortBy(userData, ['friends']);
+var userName = _.map(sortedPerfriend, 'name');
+console.log('User Names: ', userName);
+
+//3. Массив всех друзей всех пользователей, не должно быть повторяющихся людей
+
+var allfriends = _.flatten(_.map(userData, 'friends'));
+var friends = _.sortBy(_.uniq(_.map(allfriends, 'name')), _.toLower);
+console.log('Users friends: ', friends);

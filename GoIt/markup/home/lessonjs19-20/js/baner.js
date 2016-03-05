@@ -21,17 +21,12 @@ var baner =[
 
 ];
 
-
-
 var $html = $('#baner').html(); //.html() записує повнічтю html вміст
 var $template = tmpl($html,{
     data: baner
 });
 
-//tmpl - виклик шаблону
-//в шаблон потрібно передавати обєет а не масив !масив не працює
 $('.banners').append($template);
-
 
 var $allLinks = $('.accordion__section__title');
 var $links = $('.accordion__section__title');
@@ -56,7 +51,6 @@ $links.on('click', function(e){
   }).next('div').slideDown();
 
 })
-
 */
   $links.on('click', function(e){
   e.preventDefault()
@@ -79,6 +73,5 @@ $links.on('click', function(e){
          if($content.css('display') == 'none'){
          $content.slideDown()
          }
-
-  })
-})
+       })
+     })

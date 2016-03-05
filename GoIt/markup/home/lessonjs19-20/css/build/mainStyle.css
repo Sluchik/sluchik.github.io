@@ -147,7 +147,6 @@ input[type="text"]:focus {
 }
 
 .pre_footer .conteyner {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +256,6 @@ input[type="text"]:focus {
 }
 
 .owl-carousel .owl-wrapper-outer.autoHeight {
-  -webkit-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
 
@@ -684,7 +682,6 @@ header {
   height: 19px;
   background-image: url("../../img/comunity.png");
   background-repeat: no-repeat;
-  -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
 
@@ -743,7 +740,6 @@ header {
 .menu ul li {
   display: block;
   float: left;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-right: 1px solid #000;
 }
@@ -778,7 +774,6 @@ header {
   border: none;
   border-left: solid 2px #000;
   background-color: #35383c;
-  -webkit-transition: border 0.3s;
   transition: border 0.3s;
   background-image: url("../../img/search.png");
   background-repeat: no-repeat;
@@ -907,7 +902,6 @@ header {
   background-repeat: no-repeat;
   background-color: #248cec;
   opacity: 1;
-  -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
