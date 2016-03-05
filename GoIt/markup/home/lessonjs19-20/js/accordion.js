@@ -24,6 +24,8 @@ var $links = $('.accordion__section__title');
 var $content = $(this).next('div');
     if($content.css('display') == 'none'){
     $content.slideDown()
+
     }
   })
+
 })

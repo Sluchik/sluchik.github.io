@@ -1,11 +1,13 @@
 var gulp = require('gulp');
-var concatCss = require('gulp-concat-css');
-var autoprefixer = require('gulp-autoprefixer');
-var sass = require('gulp-sass');
 var watch = require('gulp-watch');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var concatCss = require('gulp-concat-css');
+
+
 // виклик плагіна
 gulp.task('sass', function () {
-  return gulp.src('sass/*.scss')
+  return gulp.src('css/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('css/'));
 });
@@ -17,8 +19,6 @@ gulp.task('css', function () {
     .pipe(gulp.dest('css/build/'));
 });
 
-
-
 gulp.task('watch', function () {
-   gulp.watch('sass/*.scss', ['sass','css'])
+   gulp.watch('css/sass/*.scss', ['sass','css'])
 })

@@ -11,7 +11,6 @@ $(document).ready(function() {
       singleItem: true,
        autoPlay: true,
        afterMove:	true
-
   });
 
 });
