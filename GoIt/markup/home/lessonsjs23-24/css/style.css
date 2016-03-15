@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  color:rgb(135,135,135);
+  background-color: rgb(232,232,232);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.toDo_conteyner {
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+  border: 1px solid rgb(221,221,221);
+    background-color: #fff;
+  padding: 15px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+}
+
+.style-4 {
+  margin-bottom: 15px;
+  width: 75%;
+  float: left;
+}
+
+.style-4 input[type="text"] {
+  float: left;
+  outline: none;
+  display: block;
+  margin-bottom: 20px;
+  margin: 0;
+  width: 70%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #faa;
+  transition: border 0.3s;
+}
+
+.style-4 input[type="text"]:focus,
+.style-4 input[type="text"].focus {
+  border-bottom: solid 2px #fe2f2f;
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  width: 80%;
+  color: rgb(43,43,43);
+  font-weight: 300;
+}
+input[type="text"]:disabled {
+    background: #fff;
+}
+
+.item__list {
+  clear: both;
+}
+
+.item__block {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+}
+.item-delete {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url('../img/milker-X-icon.png');
+  background-size: contain;
+  top: 35%;
+  right: 15px;
+  transition: all .3s;
+}
+.item-edit{
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-image: url('../img/ok-xxl.png');
+  background-size: contain;
+  top: 35%;
+  right: 40px;
+  transition: all .3s;
+}
+
+.item-delete:hover{
+  -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.myButton {
+
+  background-color: #ff9595;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 6px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background-color: #ff4040;
+}
+
+.myButton:active {
+  outline: 0;
+  position: relative;
+  top: 1px;
+}

@@ -18,7 +18,7 @@ function httprRequest(e){
   $.ajax({
       url: $url,
       dataType: 'jsonp',
-      // metod: 'POST',
+      metod: 'GET',
       success: function (data) {
         console.log('works');
       }
