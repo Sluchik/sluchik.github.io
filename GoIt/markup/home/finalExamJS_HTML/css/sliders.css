@@ -1,0 +1,279 @@
+/*=============slider=============*/
+.slider {
+  margin-top: 65px;
+  height: 500px;
+}
+
+.slider__title {
+  text-align: center;
+  font: 22px/4em montserratbold, sans-serif;
+}
+
+.slider__box {
+  overflow: hidden;
+}
+
+/*.slider .slider__box {
+  height: 100%;
+  overflow: hidden;
+}*/
+
+.slider .slider__box .slider__item {
+  border-radius: 5px;
+  background-color: #ff8523;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.maska {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: rgba(255,255,255,0);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.59) 99%, rgba(0,0,0,0.6) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(99%, rgba(0,0,0,0.59)), color-stop(100%, rgba(0,0,0,0.6)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.59) 99%, rgba(0,0,0,0.6) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.59) 99%, rgba(0,0,0,0.6) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.59) 99%, rgba(0,0,0,0.6) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.59) 99%, rgba(0,0,0,0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/*firstslider*/
+.slider__first {
+  position: relative;
+}
+
+.firstslider .slider__item--slide1 {
+  background-image: url('../../img/step1.jpg');
+  background-position: -155px 0px;
+}
+
+.firstslider .slider__item--slide2 {
+  background-image: url('../../img/step2.jpg');
+  background-position: -155px 0px;
+}
+
+.firstslider .slider__item--slide3 {
+  background-image: url('../../img/step3.jpg');
+  background-position: -155px 0px;
+}
+
+.firstslider {
+  position: relative;
+}
+
+.firstslider .firstslider__nav {
+  padding: 20px;
+      top: 34%;
+      width: 93%;
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.7;
+}
+
+.firstslider .firstslider__nav  a {
+  cursor: pointer;
+  display: block;
+  width: 31px;
+  height: 60px;
+  background-image: url('../../img/nav.png');
+  background-repeat: no-repeat;
+}
+
+.firstslider .firstslider__nav .firstslider__nav--prev {
+  float: left;
+  background-position: 0 0;
+}
+
+.firstslider .firstslider__nav .firstslider__nav--next {
+  float: right;
+  background-position: -35px 0;
+}
+
+.firstslider .slider__info {
+  padding-top: 250px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.firstslider .slide__button {
+  padding: 5px 15px;
+  color: #fff;
+  font: 10px montserratregular, sans-serif;
+  background-color: #ff4e50;
+  border-radius: 20px;
+}
+
+.firstslider .slide__title {
+  padding-top: 10px;
+  color: #fff;
+  font: 24px montserratbold, sans-serif;
+}
+
+.firstslider .slide__text {
+  color: #ccc;
+  font: 14px robotolight, sans-serif;
+}
+/*=============end_slider=============*/
+
+
+/*=============secondslider=============*/
+
+.secondslider .slider__item--slide1 {
+  background-image: url('../../img/step2.jpg');
+  background-position: -155px 0px;
+}
+
+.secondslider .slider__item--slide2 {
+  background-image: url('../../img/step2.jpg');
+  background-position: -155px 0px;
+}
+
+.secondslider .slider__item--slide3 {
+  background-image: url('../../img/step1.jpg');
+  background-position: -155px 0px;
+}
+
+.secondslider {
+  position: relative;
+}
+
+.secondslider .secondslider__nav {
+  padding: 20px;
+      top: 34%;
+      width: 93%;
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.7;
+}
+
+.secondslider .secondslider__nav  a {
+  cursor: pointer;
+  display: block;
+  width: 31px;
+  height: 60px;
+  background-image: url('../../img/nav.png');
+  background-repeat: no-repeat;
+}
+
+.secondslider .secondslider__nav .secondslider__nav--prev {
+  float: left;
+  background-position: 0 0;
+}
+
+.secondslider .secondslider__nav .secondslider__nav--next {
+  float: right;
+  background-position: -35px 0;
+}
+
+.secondslider .slider__info {
+  padding-top: 300px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.slider__info .lider__info--second {
+}
+
+.secondslider .slide__button {
+  padding: 5px 15px;
+  color: #fff;
+  font: 10px montserratregular, sans-serif;
+  background-color: #ff4e50;
+  border-radius: 20px;
+}
+
+.secondslider .slide__title {
+  padding-top: 10px;
+  color: #fff;
+  font: 24px montserratbold, sans-serif;
+}
+
+.secondslider .slide__text {
+  color: #ccc;
+  font: 14px robotolight, sans-serif;
+}
+/*=============thirdslider=============*/
+
+.thirdslider .slider__item--slide1 {
+  background-image: url('../../img/step3.jpg');
+  background-position: -155px 0px;
+}
+
+.thirdslider .slider__item--slide2 {
+  background-image: url('../../img/step2.jpg');
+  background-position: -155px 0px;
+}
+
+.thirdslider .slider__item--slide3 {
+  background-image: url('../../img/step1.jpg');
+  background-position: -155px 0px;
+}
+
+.thirdslider {
+  position: relative;
+}
+
+.thirdslider .thirdslider__nav {
+  padding: 20px;
+      top: 34%;
+      width: 93%;
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.7;
+}
+
+.thirdslider .thirdslider__nav  a {
+  cursor: pointer;
+  display: block;
+  width: 31px;
+  height: 60px;
+  background-image: url('../../img/nav.png');
+  background-repeat: no-repeat;
+}
+
+.thirdslider .thirdslider__nav .thirdslider__nav--prev {
+  float: left;
+  background-position: 0 0;
+}
+
+.thirdslider .thirdslider__nav .thirdslider__nav--next {
+  float: right;
+  background-position: -35px 0;
+}
+
+.thirdslider .slider__info {
+  padding-top: 250px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.thirdslider .slide__button {
+  padding: 5px 15px;
+  color: #fff;
+  font: 10px montserratregular, sans-serif;
+  background-color: #ff4e50;
+  border-radius: 20px;
+}
+
+.thirdslider .slide__title {
+  padding-top: 10px;
+  color: #fff;
+  font: 24px montserratbold, sans-serif;
+}
+
+.thirdslider .slide__text {
+  color: #ccc;
+  font: 14px robotolight, sans-serif;
+}

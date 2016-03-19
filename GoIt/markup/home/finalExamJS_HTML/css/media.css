@@ -1,0 +1,87 @@
+
+
+@media screen and (max-width: 746px) {
+  .container {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container .cols {
+    float: none;
+    margin: 0 0 1em;
+    padding: 0 1em;
+  }
+
+  .container .cols.col-1,
+  .container .cols.col-2,
+  .container .cols.col-3,
+  .container .cols.col-4,
+  .container .cols.col-5,
+  .container .cols.col-6,
+  .container .cols.col-7,
+  .container .cols.col-8,
+  .container .cols.col-9,
+  .container .cols.col-10,
+  .container .cols.col-11,
+  .container .cols.col-12 {
+    width: 100%;
+  }
+
+
+
+  header {
+
+    background: rgb(150,150,150) url(../../img/heder_img.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 540px;
+  }
+
+  .authentication {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+
+  .logo {
+    margin-top: 100px;
+  text-align: center;
+  width: 100%;
+  float: none;
+  }
+
+  .top__header {
+    padding-top:12px;
+  }
+
+  .header__bottom {
+    padding-top: 30px;
+
+  }
+
+  .header__bottom .header__bottom--title {
+
+  font-size: 30px;
+    letter-spacing: 1px;
+
+  }
+  .header__bottom .header__bottom--subtitle {
+    font:  18px/2em robotolight, sans-serif;
+    margin-bottom: 26px;
+  }
+
+  .slider {
+    margin-top: 20px;
+}
+.slider__title {
+  text-align: center;
+  font: 22px/2em montserratbold, sans-serif;
+}
+.firstslider__nav,
+.secondslider__nav,
+.thirdslider__nav{
+  display: none;
+}
+}

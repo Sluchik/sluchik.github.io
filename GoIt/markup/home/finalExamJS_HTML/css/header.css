@@ -1,0 +1,79 @@
+/*=============header=============*/
+header {
+  position: relative;
+  max-width: 100%;
+  background: rgb(150,150,150) url(../../img/heder_img.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 700px;
+}
+.top__header {
+  padding-top: 38px;
+}
+
+.logo {
+  color: #fff;
+  float: left;
+  padding-top: 6px;
+  padding-left: 5px;
+}
+
+.logo a {
+  color: #fff;
+  font: 20px montserratbold, sans-serif;
+
+}
+
+.authentication {
+  color: #fff;
+  float: right;
+}
+
+
+ .authentication .authentication__container--singup{
+   border-radius: 20px;
+   border: 2px solid #fff;
+ }
+.authentication li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.authentication li a {
+  display: block;
+  color: #fff;
+  font: 0.875 /1.5em montserratbold, sans-serif;
+  padding: 10px 24px;
+
+}
+
+.header__bottom {
+  padding-top: 139px;
+  text-align: center;
+  color: #fff;
+}
+
+.header__bottom .header__bottom--title {
+  display: block;
+  margin: 0 auto;
+  font:  52px  montserratbold, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 500px;
+}
+
+.header__bottom .header__bottom--subtitle {
+  font:  24px/3em robotolight, sans-serif;
+  margin-bottom: 26px;
+}
+
+.header__bottom .header__bottom--button {
+  color: #fff;
+  font:  14px  montserratbold, sans-serif;
+  padding:  11px 12px;
+  background-color: #ff4e50;
+  border-radius: 20px;
+}
+/*-=============end_header=============*/
