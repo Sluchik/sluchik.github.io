@@ -10,6 +10,16 @@
 }
 
 @media screen and (max-width: 460px) {
+ .grid-item--width4 { width: 100%}
+ .grid-item--width8 { width: 100%}
+    .grid-item--height1 { height: 118px; }
+    .grid-item img{
+       width: 100%;
+        height: 180;
+    }
+.grid__item__img__text p{
+  padding-top: 10%;
+}
   .container .cols {
     float: none;
     margin: 0 0 1em;

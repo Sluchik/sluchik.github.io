@@ -1,5 +1,5 @@
 
-
+// carysel
 $(document).ready(function(){
   $('#firstslidre').owlCarousel({
       loop:true,
@@ -66,4 +66,17 @@ $(document).ready(function(){
       owlt.trigger('next.owl.carousel');
   });
 
+
+
+
+  // masonry
+
+
+  $('.grid').masonry({
+  
+    itemSelector: '.grid-item',
+    percentPosition: true,
+
+
+  });
 });

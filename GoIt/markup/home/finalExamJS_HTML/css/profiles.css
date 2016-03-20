@@ -7,7 +7,7 @@
     font: 24px montserratbold, sans-serif; }
 
 .person__box {
-  margin-top: 25px; }
+  margin: 45px 0; }
 
 .person__profile {
   text-align: center; }
@@ -36,3 +36,17 @@
     width: 41px;
     height: 41px;
     border-radius: 50%; }
+
+.person {
+  text-align: center;
+  padding-bottom: 45px; }
+  .person .person__seemore {
+    font: 14px/36px montserratbold, sans-serif;
+    text-align: center;
+    color: #ff4e50;
+    border: 3px solid #ff4e50;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px 20px; }
