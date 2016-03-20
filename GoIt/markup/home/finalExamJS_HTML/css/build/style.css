@@ -851,7 +851,7 @@ header {
 
 .slider {
   margin-top: 65px;
-  height: 500px;
+  /*height: 500px;*/
 }
 
 .slider__title {
@@ -1209,7 +1209,7 @@ header {
   }
 }
 .person {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .person .person__title {
