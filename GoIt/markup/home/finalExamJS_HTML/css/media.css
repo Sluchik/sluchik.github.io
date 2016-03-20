@@ -1,25 +1,35 @@
-
-
 @media screen and (max-width: 746px) {
   .container {
     padding: 5px;
   }
-  .container .cols.col-3{
+
+  .container .cols.col-3 {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 460px) {
- .grid-item--width4 { width: 100%}
- .grid-item--width8 { width: 100%}
-    .grid-item--height1 { height: 118px; }
-    .grid-item img{
-       width: 100%;
-        height: 180;
-    }
-.grid__item__img__text p{
-  padding-top: 10%;
-}
+  .grid-item--width4 {
+    width: 100%
+  }
+
+  .grid-item--width8 {
+    width: 100%
+  }
+
+  .grid-item--height1 {
+    height: 118px;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: 180;
+  }
+
+  .grid__item__img__text p {
+    padding-top: 10%;
+  }
+
   .container .cols {
     float: none;
     margin: 0 0 1em;
@@ -41,14 +51,8 @@
     width: 100%;
   }
 
-
-
   header {
 
-    background: rgb(150,150,150) url(../../img/heder_img.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
     height: 540px;
   }
 
@@ -60,41 +64,54 @@
 
   .logo {
     margin-top: 100px;
-  text-align: center;
-  width: 100%;
-  float: none;
+    text-align: center;
+    width: 100%;
+    float: none;
   }
 
   .top__header {
-    padding-top:12px;
+    padding-top: 12px;
   }
 
   .header__bottom {
     padding-top: 30px;
-
   }
 
   .header__bottom .header__bottom--title {
-
-  font-size: 30px;
+    font-size: 30px;
     letter-spacing: 1px;
-
   }
+
   .header__bottom .header__bottom--subtitle {
-    font:  18px/2em robotolight, sans-serif;
+    font: 18px/2em robotolight, sans-serif;
     margin-bottom: 26px;
   }
 
-.slider {
+  .slider {
     margin-top: 20px;
-}
-.slider__title {
-  text-align: center;
-  font: 22px/2em montserratbold, sans-serif;
-}
-.firstslider__nav,
+  }
+
+  .slider__title {
+    text-align: center;
+    font: 22px/2em montserratbold, sans-serif;
+  }
+
+  .firstslider__nav,
 .secondslider__nav,
-.thirdslider__nav{
-  display: none;
-}
+.thirdslider__nav {
+    display: none;
+  }
+  .search .search__input{
+    width: 40%;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer__company ul li{
+    display: inline-block;
+    padding: 0 10px;
+  }
+  .footer__design {
+    text-align: center;
+  }
 }

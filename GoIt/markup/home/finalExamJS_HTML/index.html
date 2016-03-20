@@ -10,7 +10,10 @@
   <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
   <script src="js/plagins/owl.carousel.js"></script>
   <script src="js/plagins/templat.js"></script>
+  <script src="js/activity.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/profiles.js"></script>
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -155,23 +158,59 @@ condimentum</h4>
     </div>
   </aside>
 <section>
-  <div class="holiday_activity">
-    <div class="container">
-    <div class="grid">
-      <div class="grid-sizer"></div>
-      <div class="grid-item grid-item--width4 grid-item--height1"><a href=""><img src="img/p1.jpg" alt=""><div class="grid__item__img__text"><p>Treval</p></div></a></div>
-      <div class="grid-item grid-item--width4 grid-item--height1"><a href=""><img src="img/p2.jpg" alt=""><div class="grid__item__img__text"><p>Treval</p></div></a></div>
-      <div class="grid-item grid-item--width4 grid-item--height1"><a href=""><img src="img/p3.jpg" alt=""><div class="grid__item__img__text"><p>Treval</p></div></a></div>
-      <div class="grid-item grid-item--width4 grid-item--height1"><a href=""><img src="img/p5.jpg" alt=""><div class="grid__item__img__text"><p>Treval</p></div></a></div>
-      <div class="grid-item grid-item--width8 grid-item--height1"><a href=""><img src="img/p4.jpg" alt=""><div class="grid__item__img__text"><p>Treval</p></div></a></div>
-      <div class="grid-item grid-item--width8 grid-item--height1"><a href=""><img src="img/p6.jpg" alt=""><div class="grid__item__img__text"><p>Treval</p></div></a></div>
-      <div class="grid-item grid-item--width4 grid-item--height1"><a href=""><img src="img/p7.jpg" alt=""><div class="grid__item__img__text"><p>Treval</p></div></a></div>
-    </div>
-  </div>
-  </div>
-</section>
 
-<script src="js/profiles.js"></script>
+    <!-- holidayactivity_section -->
+<div class="holiday_activity">
+
+
+
+</div>
+
+<script type="text/template" id="holiday_activity">
+  <div class="container">
+  <div class="grid">
+<div class="grid-sizer"></div>
+<% for(var i = 0; i < data.images.length; i++) { %>
+    <div class="grid-item grid-item--width4 grid-item--height1"><a href="<%=data.images[i].imageurl%>" target="_blank"><img src="<%=data.images[i].imageurl%>" alt=""><div class="grid__item__img__text"><p><%=data.images[i].word%></p></div></a></div>
+<% }; %>
+  </div>
+</div>
+</script>
+<!-- searchsection -->
+<div class="search">
+<div class="container  cols col-12">
+  <h4 class="search__title">Discover holiday activity ideas</h4>
+  <p class="search___text">Hi! What are your holiday interests?</p>
+  <form action="">
+    <input type="text" name="name" value="" class="search__input" id="#target" placeholder="Enter your interest">
+    <button type="button" name="button" class="search__button" id="search__button">Search</button>
+  </form>
+</div>
+</div>
+</section>
+<!-- footer -->
+<footer>
+<div class="container  cols col-12">
+<div class="row">
+<div class="footer__title cols col-3"><h4><a href="#" class="logo__link">URLAUBSGLÜCK</a></h4></div>
+<div class=" footer__company cols col-3">
+  <p>Company</p>
+  <ul>
+    <li><a href="">About us</a></li>
+    <li><a href="">Contacts</a></li>
+    <li><a href="">Press</a></li>
+    <li><a href="">Blog</a></li>
+  </ul>
+</div>
+<div class="footer__partner cols col-3"><p>Partners</p></div>
+<div class="footer__design cols col-3">
+  <p>Designed by</p>
+  <img src="img/st.png" alt=""></div>
+
+</div>
+</div>
+
+</footer>
 </body>
 
 </html>
