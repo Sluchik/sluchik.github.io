@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/build/style.css" media="screen" charset="utf-8">
   <script src="http:///code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="js/plagins/owl.carousel.js"></script>
+  <script src="js/plagins/templat.js"></script>
   <script src="js/main.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,6 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
   <!-- header -->
   <header>
@@ -49,7 +51,7 @@ holiday dreams</h1>
         <h4 class="slider__title">How Urlaubsglück works?</h4>
 
 
-  <!-- first slider -->
+        <!-- first slider -->
         <div class="firstslider slider__box   cols col-4">
           <div class="owl-carousel" id="firstslidre">
             <div class="slider__item  slider__item--slide1 item">
@@ -75,60 +77,87 @@ condimentum</h4>
           </div>
         </div>
 
-<!-- second slider -->
-<div class="secondslider slider__box   cols col-4 ">
-  <div class="owl-carousel" id="secondslider">
-  <div class="slider__item  slider__item--slide1 item">
-<div class="maska"></div>
-    <div class="slider__info slider__info--second">
-      <a class="slide__button slide__button--first" href="">step 2</a>
-      <h4 class="slide__title slide__title--first">Morbi velit risus</h4>
-      <p class="slide__text slide__text--first">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-    </div>
-  </div>
-    <div class="slider__item  slider__item--slide2 item">
-        <div class="maska"></div>
-    </div>
-      <div class="slider__item  slider__item--slide3 item">
-          <div class="maska"></div>
-      </div>
-</div>
-<div class="secondslider__nav clearfix">
-  <a class="secondslider__nav--prev"></a>
-  <a class="secondslider__nav--next"></a>
-</div>
-  </div>
+        <!-- second slider -->
+        <div class="secondslider slider__box   cols col-4 ">
+          <div class="owl-carousel" id="secondslider">
+            <div class="slider__item  slider__item--slide1 item">
+              <div class="maska"></div>
+              <div class="slider__info slider__info--second">
+                <a class="slide__button slide__button--first" href="">step 2</a>
+                <h4 class="slide__title slide__title--first">Morbi velit risus</h4>
+                <p class="slide__text slide__text--first">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+              </div>
+            </div>
+            <div class="slider__item  slider__item--slide2 item">
+              <div class="maska"></div>
+            </div>
+            <div class="slider__item  slider__item--slide3 item">
+              <div class="maska"></div>
+            </div>
+          </div>
+          <div class="secondslider__nav clearfix">
+            <a class="secondslider__nav--prev"></a>
+            <a class="secondslider__nav--next"></a>
+          </div>
+        </div>
 
-<!-- third slider -->
-<div class="thirdslider slider__box  cols col-4 ">
-  <div class="owl-carousel" id="thirdslider">
-  <div class="slider__item  slider__item--slide1 item">
-  <div class="maska"></div>
-    <div class="slider__info slider__info-third">
-      <a class="slide__button slide__button--first" href="">step 3</a>
-      <h4 class="slide__title slide__title--first">Sed leo enim,
+        <!-- third slider -->
+        <div class="thirdslider slider__box  cols col-4 ">
+          <div class="owl-carousel" id="thirdslider">
+            <div class="slider__item  slider__item--slide1 item">
+              <div class="maska"></div>
+              <div class="slider__info slider__info-third">
+                <a class="slide__button slide__button--first" href="">step 3</a>
+                <h4 class="slide__title slide__title--first">Sed leo enim,
     condimentum</h4>
-      <p class="slide__text slide__text--first">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </div>
-  </div>
-    <div class="slider__item  slider__item--slide2 item">
-        <div class="maska"></div>
-    </div>
-    <div class="slider__item  slider__item--slide3 item">
-        <div class="maska"></div>
-    </div>
-</div>
-<div class="thirdslider__nav clearfix">
-  <a class="thirdslider__nav--prev"></a>
-  <a class="thirdslider__nav--next"></a>
-</div>
-  </div>
-    </div>
+                <p class="slide__text slide__text--first">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+              </div>
+            </div>
+            <div class="slider__item  slider__item--slide2 item">
+              <div class="maska"></div>
+            </div>
+            <div class="slider__item  slider__item--slide3 item">
+              <div class="maska"></div>
+            </div>
+          </div>
+          <div class="thirdslider__nav clearfix">
+            <a class="thirdslider__nav--prev"></a>
+            <a class="thirdslider__nav--next"></a>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
 
+  <!-- profile_section -->
+
+  <aside class="person">
+
+    <div class="container  col-12">
+      <h4 class="person__title">Meet a partner for your best holiday</h4>
+      <div class="row person__box">
+
+        <script type="text/template" id="person">
+          <% for(var i = 0; i < data.length; i++) { %>
+            <div class="person__profile cols col-3">
+              <div class="person__avatar">
+                <a href=""><img src="<%=data[i].avatar%>" alt=""></a>
+                <div class="person__status"><img src="<%=data[i].status%>"></div>
+              </div>
+              <p class="person__name"><%=data[i].name%></p>
+              <p class="person__info"><%=data[i].info%></p>
+            </div>
+            <% }; %>
+        </script>
+      </div>
+
+    </div>
 
 
+  </aside>
+
+
+<script src="js/profiles.js"></script>
 </body>
 
 </html>

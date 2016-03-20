@@ -4,6 +4,9 @@
   .container {
     padding: 5px;
   }
+  .container .cols.col-3{
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -72,7 +75,7 @@
     margin-bottom: 26px;
   }
 
-  .slider {
+.slider {
     margin-top: 20px;
 }
 .slider__title {
