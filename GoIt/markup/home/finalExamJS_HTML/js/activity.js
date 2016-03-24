@@ -11,7 +11,9 @@ function myMethod(data){
 
 $(function() {
 function httprRequest(e){
-    // e.preventDefault();
+  if(e){
+    e.preventDefault();
+  }
     var size;
     var search;
     var scrinsize = screen.width;
@@ -33,6 +35,13 @@ function httprRequest(e){
         url: $url,
         metod: 'GET',
         dataType: 'json',
+        beforeSend: function () {
+        $('.holiday_activity').html(' ');
+               var spiner = '<p style="text-align:center;"><img src="img/speener.gif" align="middle" width="100px" height="100px" alt=""></p>'
+               $('.holiday_activity').append(spiner);
+           },
+           complete: function () {
+           },
         success: function (data) {
         myMethod(data);
         }
