@@ -77,6 +77,8 @@ textarea:focus::-webkit-input-placeholder {
 textarea:focus:placeholder-shown {
   color: transparent;
 }
+button:focus {outline:0;}
+
 h1,
 h3,
 h4,

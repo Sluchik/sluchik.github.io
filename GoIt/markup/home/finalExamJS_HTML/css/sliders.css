@@ -13,11 +13,6 @@
   overflow: hidden;
 }
 
-/*.slider .slider__box {
-  height: 100%;
-  overflow: hidden;
-}*/
-
 .slider .slider__box .slider__item {
   border-radius: 5px;
   background-color: #ff8523;
@@ -72,8 +67,8 @@
 
 .firstslider .firstslider__nav {
   padding: 20px;
-      top: 34%;
-      width: 93%;
+  top: 34%;
+  width: 93%;
   position: absolute;
   z-index: 1000;
   opacity: 0.7;
@@ -99,7 +94,7 @@
 }
 
 .firstslider .slider__info {
-  padding-top: 250px;
+  padding-top: 235px;
   padding-left: 20px;
   position: relative;
   z-index: 1000;
@@ -107,7 +102,9 @@
 
 .firstslider .slide__button {
   padding: 5px 15px;
+  text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
   font: 10px montserratregular, sans-serif;
   background-color: #ff4e50;
   border-radius: 20px;
@@ -149,8 +146,8 @@
 
 .secondslider .secondslider__nav {
   padding: 20px;
-      top: 34%;
-      width: 93%;
+  top: 34%;
+  width: 93%;
   position: absolute;
   z-index: 1000;
   opacity: 0.7;
@@ -176,7 +173,7 @@
 }
 
 .secondslider .slider__info {
-  padding-top: 300px;
+  padding-top: 270px;
   padding-left: 20px;
   position: relative;
   z-index: 1000;
@@ -187,6 +184,7 @@
 
 .secondslider .slide__button {
   padding: 5px 15px;
+  text-transform: uppercase;
   color: #fff;
   font: 10px montserratregular, sans-serif;
   background-color: #ff4e50;
@@ -226,8 +224,8 @@
 
 .thirdslider .thirdslider__nav {
   padding: 20px;
-      top: 34%;
-      width: 93%;
+  top: 34%;
+  width: 93%;
   position: absolute;
   z-index: 1000;
   opacity: 0.7;
@@ -253,7 +251,7 @@
 }
 
 .thirdslider .slider__info {
-  padding-top: 250px;
+  padding-top: 235px;
   padding-left: 20px;
   position: relative;
   z-index: 1000;
@@ -261,6 +259,7 @@
 
 .thirdslider .slide__button {
   padding: 5px 15px;
+  text-transform: uppercase;
   color: #fff;
   font: 10px montserratregular, sans-serif;
   background-color: #ff4e50;

@@ -7,21 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/build/style.css" media="screen" charset="utf-8">
   <script src="http:///code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!-- <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script> -->
+  <script src="js/plagins/masonry.js"></script>
+  <script src="js/plagins/imagesloaded.js"></script>
   <script src="js/plagins/owl.carousel.js"></script>
   <script src="js/plagins/templat.js"></script>
   <script src="js/activity.js"></script>
   <script src="js/main.js"></script>
   <script src="js/profiles.js"></script>
-
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+  <!--[if lte IE 8]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
   <!-- header -->
   <header>
@@ -54,7 +61,6 @@ holiday dreams</h1>
       <div class=" slider  row">
         <h4 class="slider__title">How Urlaubsglück works?</h4>
 
-
         <!-- first slider -->
         <div class="firstslider slider__box   cols col-4">
           <div class="owl-carousel" id="firstslidre">
@@ -67,7 +73,6 @@ condimentum</h4>
                 <p class="slide__text slide__text--first">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
               </div>
             </div>
-
             <div class="item slider__item  slider__item--slide2">
               <div class="maska"></div>
             </div>
@@ -171,7 +176,7 @@ condimentum</h4>
   <div class="grid">
 <div class="grid-sizer"></div>
 <% for(var i = 0; i < data.images.length; i++) { %>
-    <div class="grid-item grid-item--width4 grid-item--height1"><a href="<%=data.images[i].imageurl%>" target="_blank"><img src="<%=data.images[i].imageurl%>" alt=""><div class="grid__item__img__text"><p><%=data.images[i].word%></p></div></a></div>
+    <div class="grid-item grid-item--width4 grid-item--height1<%=(i  == 4 || i == 5  ? " grid-item--width8" : "")%>"><a href="<%=data.images[i].imageurl%>" target="_blank"><img src="<%=data.images[i].imageurl%>" alt=""><div class="grid__item__img__text"><p><%=data.images[i].word%></p></div></a></div>
 <% }; %>
   </div>
 </div>

@@ -1,5 +1,5 @@
 .person {
-  padding-top: 50px; }
+  padding-top: 90px; }
   .person .person__title {
     text-align: center;
     padding-top: 10px;
@@ -7,7 +7,7 @@
     font: 24px montserratbold, sans-serif; }
 
 .person__box {
-  margin: 45px 0; }
+  margin: 31px 0; }
 
 .person__profile {
   text-align: center; }
@@ -17,7 +17,7 @@
     height: 120px;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 8px; }
+    margin-bottom: 13px; }
   .person__profile .person__avatar img {
     border-radius: 50%; }
   .person__profile .person__avatar a {

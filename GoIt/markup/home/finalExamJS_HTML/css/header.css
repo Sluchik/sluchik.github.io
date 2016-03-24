@@ -29,11 +29,15 @@ header {
   color: #fff;
   float: right;
 }
+.authentication .authentication__container--singup,
+.authentication .authentication__container--login{
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0);
+}
 
-
- .authentication .authentication__container--singup{
-   border-radius: 20px;
-   border: 2px solid #fff;
+ .authentication .authentication__container--singup:hover,
+ .authentication .authentication__container--login:hover {
+  border: 2px solid rgb(255,255,255);
  }
 .authentication li {
   display: inline-block;

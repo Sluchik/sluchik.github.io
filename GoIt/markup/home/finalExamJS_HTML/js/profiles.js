@@ -1,5 +1,6 @@
 
 $(function() {
+
 var profiles =[
 {
   avatar:'img/ava1.jpg',
@@ -27,14 +28,11 @@ var profiles =[
  }
 ];
 
-
-
-var $html = $('#person').html(); //.html() записує повнічтю html вміст
+var $html = $('#person').html();
 var $template = tmpl($html,{
     data: profiles
 });
 
-//tmpl - виклик шаблону
-//в шаблон потрібно передавати обєет а не масив !масив не працює
 $('.person__box').append($template);
+
 })

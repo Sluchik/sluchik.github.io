@@ -8,24 +8,26 @@ function myMethod(data){
    $('.holiday_activity').append($template);
   }
 
+
 $(function() {
 function httprRequest(e){
     // e.preventDefault();
-    var scrinsize;
     var size;
     var search;
-     scrinsize = screen.width;
+    var scrinsize = screen.width;
     if(scrinsize <= 460){
       size = 's';
+        console.log(size);
     } else{
         size = 'm';
+        console.log(size);
     }
     if($('.search__input').val().length == 0){
          search = '';
     } else{
         search = $('.search__input').val();
     }
-    var $url = 'http://api.pixplorer.co.uk/image?word='+search +'&amount=6&size='+size;
+    var $url = 'http://api.pixplorer.co.uk/image?word='+search +'&amount=7&size='+size;
     $('.search__input').val(" ");
     $.ajax({
         url: $url,

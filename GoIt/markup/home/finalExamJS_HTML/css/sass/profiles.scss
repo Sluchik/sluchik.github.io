@@ -1,18 +1,18 @@
 .person {
-padding-top: 50px;
-
-
+  padding-top: 90px;
   .person__title {
     text-align: center;
     padding-top: 10px;
     color: #000;
     font: 24px montserratbold, sans-serif;
-  }
 }
+}
+
 .person__box {
-  margin: 45px 0;
+  margin: 31px 0;
 }
-.person__profile{
+
+.person__profile {
   text-align: center;
   .person__avatar{
     text-align: center;
@@ -20,32 +20,35 @@ padding-top: 50px;
     height: 120px;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 8px;
-  }
-.person__avatar img{
+    margin-bottom: 13px;
+}
 
+.person__avatar img {
   border-radius: 50%;
 }
-.person__avatar a{
+
+.person__avatar a {
   display: block;
-padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
-.person__name{
+.person__name {
   color: #000;
   font: 14px/36px montserratbold, sans-serif;
 }
-.person__info{
+
+.person__info {
   color: #989898;
   font: 14px robotolight, sans-serif;
 }
-.person__status{
- position: absolute;
- bottom: -5px;
- right: -12px;
- width: 41px;
- height: 41px;
- border-radius: 50%;
+
+.person__status {
+  position: absolute;
+  bottom: -5px;
+  right: -12px;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
 }
 }
 
@@ -62,6 +65,5 @@ padding-bottom: 15px;
     -ms-border-radius: 20px;
     border-radius: 20px;
     padding: 10px 20px;
-
-  }
+}
 }
