@@ -41,7 +41,7 @@ header {
 .authentication li a {
   display: block;
   color: #fff;
-  font: 0.875 /1.5em montserratbold, sans-serif;
+  font: 0.875em /1.5em montserratbold, sans-serif;
   padding: 10px 24px; }
 
 .header__bottom {

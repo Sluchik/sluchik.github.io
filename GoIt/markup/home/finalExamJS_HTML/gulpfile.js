@@ -4,6 +4,10 @@ var watch = require('gulp-watch');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var webserver = require('gulp-webserver');
+var	minifyCSS = require('gulp-minify-css');
+var rename = require('gulp-rename');
+var cleanCSS = require('gulp-clean-css');
+
 
 
 gulp.task('webserver', function() {
@@ -17,11 +21,17 @@ gulp.task('webserver', function() {
 
 gulp.task('css', function () {
   return gulp.src(['css/commonstyle.css', 'css/fonts.css', 'css/header.css', 'css/carousel.css',  'css/profiles.css', 'css/holidayactivity.css', 'css/search.css', 'css/footer.css', 'css/media.css'])
+  .pipe(cleanCSS({
+    compatibility: 'ie8',
+    debug: true
+  }))
   .pipe(autoprefixer({
   			browsers: ['last 2 versions'],
   			cascade: false
   		}))
     .pipe(concatCss('style.css'))
+    .pipe(minifyCSS({keepBreaks: true}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('css/build/'));
 });
 
