@@ -1,5 +1,5 @@
-@media screen and (max-width: 746px) {
 
+@media screen and (max-width: 746px) {
   .container {
     padding: 5px;
   }
@@ -7,7 +7,14 @@
   .container .cols.col-3 {
     width: 50%;
   }
-
+  .slider  .cols.col-4 {
+    width: 100%;
+  }
+.slider__box{
+  margin: 5px auto;
+  width: 100%;
+  max-width: 300px;
+}
 }
 
 @media screen and (max-width: 460px) {
@@ -98,7 +105,7 @@
     font: 22px/2em montserratbold, sans-serif;
   }
 
-  .firstslider__nav,
+.firstslider__nav,
 .secondslider__nav,
 .thirdslider__nav {
     display: none;

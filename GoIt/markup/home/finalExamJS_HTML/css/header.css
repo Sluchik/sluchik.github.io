@@ -2,7 +2,7 @@
 header {
   position: relative;
   max-width: 100%;
-  background: rgb(150,150,150) url(../../img/heder_img.jpg) no-repeat center center;
+  background: rgb(150,150,150) url(../../img/heder_img1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -65,7 +65,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   width: 100%;
-  max-width: 500px;
+  max-width: 510px;
 }
 
 .header__bottom .header__bottom--subtitle {
