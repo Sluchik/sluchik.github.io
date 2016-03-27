@@ -11,11 +11,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
  <![endif]-->
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-  <!-- <script src="js/plagins/masonry.js"></script> -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
   <script src="js/plagins/owl.carousel.js"></script>
   <script src="js/plagins/templat.js"></script>
-  <script src="js/plagins/isotope.pkgd.min.js"></script>
+   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="js/activity.js"></script>
   <script src="js/main.js"></script>
   <script src="js/profiles.js"></script>
@@ -172,7 +172,7 @@ condimentum</h4>
         <div class="grid">
           <div class="grid-sizer"></div>
           <% for(var i = 0; i < data.images.length; i++) { %>
-            <div class="grid-item grid-item--width4 grid-item--height1<%=(i  == 4 || i == 5  ? " grid-item--width8 " : " ")%>"><a href="<%=data.images[i].imageurl%>" target="_blank"><img src="<%=(data.images[i].imageurl !== " " ? data.images[i].imageurl : "http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image")%>" alt=""><div class="grid__item__img__text"><p><%=data.images[i].word%></p></div></a></div>
+            <div class="grid-item grid-item--width4 grid-item--height1<%=(i  == 4 || i == 5  ? " grid-item--width8 " : " ")%>"><a href="<%=data.images[i].imageurl%>" target="_blank"><img src="<%=(data.images[i].imageurl != "undefined" ? data.images[i].imageurl : "http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image")%>" alt=""><div class="grid__item__img__text"><p><%=data.images[i].word%></p></div></a></div>
             <% }; %>
         </div>
        </div>
