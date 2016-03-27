@@ -1,0 +1,68 @@
+
+/*grid*/
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container .cols {
+  float: left;
+  /*margin: 0 0 1em;*/
+  padding: 0 1em;
+}
+
+.container:after,
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.container .cols.col-1 {
+  width: 8.33%;
+}
+
+.container .cols.col-2 {
+  width: 16.66%;
+}
+
+.container .cols.col-3 {
+  width: 25%;
+}
+
+.container .cols.col-4 {
+  width: 33.33333%;
+}
+
+.container .cols.col-5 {
+  width: 41.66%;
+}
+
+.container .cols.col-6 {
+  width: 50%;
+}
+
+.container .cols.col-7 {
+  width: 58.33%;
+}
+
+.container .cols.col-8 {
+  width: 66.66%;
+}
+
+.container .cols.col-9 {
+  width: 75%;
+}
+
+.container .cols.col-10 {
+  width: 83.33%;
+}
+
+.container .cols.col-11 {
+  width: 91.66%;
+}
+
+.container .cols.col-12 {
+  width: 100%;
+}

@@ -3,11 +3,20 @@ var concatCss = require('gulp-concat-css');
 var watch = require('gulp-watch');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var webserver = require('gulp-webserver');
 
 
+gulp.task('webserver', function() {
+  gulp.src('./')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      open: true
+    }));
+});
 
 gulp.task('css', function () {
-  return gulp.src(['css/normalize.css','css/masonry.css', 'css/commanstyle.css', 'css/fonts.css', 'css/header.css', 'css/owl.carousel.css', 'css/sliders.css', 'css/profiles.css','css/search.css', 'css/footer.css', 'css/media.css'])
+  return gulp.src(['css/commonstyle.css', 'css/fonts.css', 'css/header.css', 'css/carousel.css',  'css/profiles.css', 'css/holidayactivity.css', 'css/search.css', 'css/footer.css', 'css/media.css'])
   .pipe(autoprefixer({
   			browsers: ['last 2 versions'],
   			cascade: false
@@ -27,4 +36,4 @@ gulp.task('watch',['css'], function () {
    gulp.watch('css/*.css', ['css'])
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['webserver','watch']);

@@ -43,10 +43,9 @@ $(".secondslider__nav--prev").click(function () {
       owlt.trigger('next.owl.carousel');
   });
 
-  // masonry
-  // $('.grid').masonry({
-  //   itemSelector: '.grid-item',
-  //   columnWidth: '.grid--item',
-  //   gutter: 10
-  // });
+  $('.grid').isotope({
+                  itemSelector: '.grid--item',
+                  layoutMode: 'masonry'
+
+              });
 });
