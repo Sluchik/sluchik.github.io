@@ -13,7 +13,6 @@ function render(data){
                });
   }
 
-
 $(function() {
 
 function httprRequest(e){
@@ -25,10 +24,8 @@ function httprRequest(e){
     var scrinsize = screen.width;
     if(scrinsize <= 460){
       size = 's';
-        console.log(size);
     } else{
         size = 'm';
-        console.log(size);
     }
     if($('.search__input').val().length == 0){
          search = '';

@@ -1,4 +1,4 @@
-@media  screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
 
   .container {
     max-width: 768px;
@@ -12,7 +12,9 @@
   .logo {
     width: 100%;
     float: none;
-    align-self: center;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
   }
 
   .slidre_nav_1,
@@ -51,6 +53,7 @@
   .sliderimg__img {
     left: 20px;
   }
+}
 
 @media screen and (max-width: 768px) {
     #home {
@@ -117,6 +120,7 @@
     font-size: 24px;
     line-height: 50px;
     text-align: right;
+    -webkit-transition: all .2s;
     transition: all .2s;
   }
 
@@ -309,6 +313,7 @@
     font-size: 24px;
     line-height: 50px;
     text-align: right;
+    -webkit-transition: all .2s;
     transition: all .2s;
   }
 
