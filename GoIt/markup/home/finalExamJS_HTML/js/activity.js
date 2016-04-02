@@ -1,11 +1,11 @@
 
 function render(data){
- $('.holiday_activity').empty();
+ $('.holiday_activity__content').empty();
    var $html = $('#holiday_activity').html();
    var $template = tmpl($html,{
         data: data
   });
-   $('.holiday_activity').append($template);
+   $('.holiday_activity__content').append($template);
 
    $('.grid').isotope({
                    itemSelector: '.grid-item',
@@ -40,14 +40,13 @@ function httprRequest(e){
         dataType: 'json',
         cache: false,
         beforeSend: function () {
-        $('.holiday_activity').html(' ');
+        $('.holiday_activity__content').html(' ');
                var spiner = '<p style="text-align:center;"><img src="img/speener.gif" align="middle" width="100px" height="100px" alt=""></p>'
-               $('.holiday_activity').append(spiner);
+               $('.holiday_activity__content').append(spiner);
            },
            complete: function () {
            },
         success: function (data) {
-          console.log(data);
         render(data);
         }
       })
