@@ -39,7 +39,7 @@ ul li a {
   background-color: rgb(38, 50, 56);
 }
 
-.active {
+.tab_active {
   color: #fcfcfc;
   background-color: rgb(38, 50, 56);
   border-bottom: 3px solid rgb(24, 255, 255);
@@ -60,8 +60,13 @@ ul li a {
   box-shadow: 0px 7px 5px -5px rgba(0,0,0,0.37);
 }
 
+
+
+
+
+
 /*form*/
-#formWrapper {
+/*#formWrapper {
   margin-top: 25px;
   width: 350px;
   padding: 15px;
@@ -127,4 +132,4 @@ ul li a {
   vertical-align: middle;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
   -webkit-tap-highlight-color: rgba(255,255,255,0);
-}
+}*/

@@ -1,11 +1,8 @@
 
 td {
-  border: 1px solid rgb(218,209,209);
+  border: 5px solid rgb(20,20,20);
 }
 
-.wraper {
-
-}
 table   {
   margin: 10% auto;
   border-collapse: collapse;
@@ -13,7 +10,19 @@ table   {
 table td,
 table tr{
   margin: 0;
-  padding: 25px;
   text-align: center;
 
+}
+
+.red{
+  background-color: #ff5b2d;
+}
+.yellow{
+  background-color: #fffa69;
+}
+.blue{
+  background-color: #074481
+}
+.black{
+  background-color: #000;
 }

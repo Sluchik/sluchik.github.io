@@ -1,70 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>box</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <div class="wraper">
-    <table cellspacing="0">
+    <table cellspacing="0" width="400" height="400">
 
-      <!-- string 1 -->
-      <tr>
+      <!-- row 1 -->
+      <tr class="row-1">
         <td colspan="2"></td>
-        <td colspan="4"></td>
-        <td colspan="3"></td>
+        <td colspan="2" class="yellow"></td>
+        <td colspan="2" class="yellow"></td>
       </tr>
 
-      <!-- string 2 -->
-      <tr>
+      <!-- row 2 -->
+      <tr class="row-2" height=100px>
+        <td></td>
+        <td class="red" colspan="3" rowspan="2"></td>
+        <td colspan="2" class="yellow" ></td>
+      </tr>
+      <!-- row 3 -->
+
+      <tr height=100px>
         <td rowspan="2"></td>
-        <td colspan="5" rowspan="5"></td>
-        <td colspan="3"></td>
-      </tr>
-      <!-- string 3 -->
-
-      <tr>
-        <td colspan="3"></td>
-      </tr>
-      <!-- string 4 -->
-
-      <tr>
-        <td rowspan="4"></td>
-        <td colspan="3"></td>
-      </tr>
-      <!-- string 5 -->
-      <tr>
-        <td colspan="2" rowspan="2"></td>
+        <td></td>
         <td></td>
       </tr>
-      <!-- string 6 -->
-      <tr>
-        <td></td>
-      </tr>
-      <!-- string 7 -->
-      <tr>
-        <td colspan="2" rowspan="2"></td>
-        <td colspan="3" rowspan="2"></td>
-        <td colspan="3"></td>
-      </tr>
-      <!-- string 8 -->
-      <tr>
-        <td rowspan="3"></td>
-        <td colspan="3" rowspan="2"></td>
-      </tr>
-      <!-- string 9 -->
-      <tr>
-        <td colspan="2" rowspan="2"></td>
-        <td colspan="3"></td>
-      </tr>
-      <!-- string 10 -->
-      <tr>
-        <td colspan="6"></td>
-      </tr>
+      <!-- row 4 -->
 
+      <tr>
+        <td class="black" ></td>
+        <td class="black"></td>
+        <td ></td>
+        <td colspan="2" ></td>
+      </tr>
+      <!-- row 5 -->
+      <tr>
+        <td  class="yellow" rowspan="3"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td></td>
+        <td class="blue" rowspan="2" colspan="2"></td>
+      </tr>
+      <!--row 6 -->
+      <tr>
+        <td rowspan="2" colspan="2"></td>
+        <td class="black"></td>
+      </tr>
+      <!-- row 7 -->
+      <tr>
+        <td colspan="3"></td>
+      </tr>
     </table>
   </div>
 
