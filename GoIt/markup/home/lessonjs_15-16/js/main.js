@@ -1,4 +1,4 @@
-function GoogleCallback(jqueryObj, data){
+﻿function GoogleCallback(jqueryObj, data){
 
   var $html = $('#template').html();
   var $template = tmpl($html,{
@@ -132,3 +132,8 @@ var vatrushka2 = inherit(animal);
 console.log(vatrushka2);
 
 });
+
+
+
+
+["Lean-Case Profile", "P&L Summary", "Cash Flow Scenarios", "Single Unit Dashboard", "Single Unit Summary", "Single Unit - Analysis", "Add Units", "All Units Summary", "All Units - Analysis", "Existing Business", "Opex - View Opex Charts"]
